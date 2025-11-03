@@ -1,0 +1,16 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO avali_logo
+  CLASS BLOCK ;
+  FOREIGN avali_logo ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 450.000 BY 528.300 ;
+  OBS
+      LAYER Metal5 ;
+        RECT 0.000 0.000 449.100 527.400 ;
+  END
+END avali_logo
+END LIBRARY
+

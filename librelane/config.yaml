@@ -1,0 +1,555 @@
+meta:
+  version: 2
+  flow: Classic
+  substituting_steps:
+    # Padring is used instead of pins
+    OpenROAD.IOPlacement: null
+    +Odb.SetPowerConnections: OpenROAD.Padring
+    OpenROAD.TapEndcapInsertion: null
+    OpenROAD.RepairDesignPostGpl: null
+    Odb.ManualGlobalPlacement: null
+    OpenROAD.CTS: null
+    OpenROAD.STAMidPnr-1: null
+    OpenROAD.ResizerTimingPostCTS: null
+    OpenROAD.STAMidPnr-2: null
+    OpenROAD.CheckAntennas: null
+    Odb.DiodesOnPorts: null
+    OpenROAD.RepairAntennas: null
+    OpenROAD.STAMidPnr: null
+    OpenROAD.CheckAntennas: null
+    OpenROAD.FillInsertion: null
+    
+    # Add the seal ring
+    +Checker.XOR: KLayout.SealRing
+    
+    # Run filler insertion
+    +KLayout.SealRing: KLayout.FillerGeneration
+    
+    # Check the density across the layers
+    +KLayout.FillerGeneration: KLayout.RunDensity
+    +KLayout.RunDensity: Checker.Density
+    
+    # Due to OpenROAD bug
+    # https://github.com/The-OpenROAD-Project/OpenROAD/issues/8229
+    #TODO OpenROAD.Repair*: null
+    
+    # Not supported for gf180mcu
+    KLayout.DRC: null
+    Checker.KLayoutDRC: null
+    
+    Checker.SetupViolations: null
+    
+    # Save time
+    #OpenROAD.IRDropReport: null
+    #Magic.DRC: null
+    #Checker.MagicDRC: null
+    #KLayout.XOR: null
+    
+    # Stuck, need to investigate...
+    #Netgen.LVS: null
+    #Checker.LVS: null
+    
+    Magic.WriteLEF: null # Not needed, save time
+    Odb.CheckDesignAntennaProperties: null # Requires LEF
+
+DESIGN_NAME: chip_top
+VERILOG_FILES:
+- dir::../src/chip_top.sv
+
+# Slightly smaller file sizes
+PRIMARY_GDSII_STREAMOUT_TOOL: klayout
+
+# Specify the pad instances for the padring
+PAD_SOUTH: [
+    clk_pad,
+    rst_n_pad,
+
+    "bidir\\[0\\].pad",
+    "bidir\\[1\\].pad",
+    "bidir\\[2\\].pad",
+    "bidir\\[3\\].pad",
+    "bidir\\[4\\].pad",
+    "bidir\\[5\\].pad",
+
+    dvss_south_0,
+
+    "bidir\\[6\\].pad",
+    "bidir\\[7\\].pad",
+    "bidir\\[8\\].pad",
+    "bidir\\[9\\].pad",
+    "bidir\\[10\\].pad",
+    "bidir\\[11\\].pad",
+    "bidir\\[12\\].pad",
+    "bidir\\[13\\].pad"
+]
+
+PAD_EAST: [
+    dvdd_east_0,
+    dvss_east_0,
+
+    "bidir\\[14\\].pad",
+    "bidir\\[15\\].pad",
+    "bidir\\[16\\].pad",
+    "bidir\\[17\\].pad",
+    "bidir\\[18\\].pad",
+    "bidir\\[19\\].pad",
+    
+    dvdd_east_1,
+    dvss_east_1,
+
+    
+    "bidir\\[20\\].pad",
+    "bidir\\[21\\].pad",
+    "bidir\\[22\\].pad",
+    "bidir\\[23\\].pad",
+    "bidir\\[24\\].pad",
+    "bidir\\[25\\].pad",
+    
+    dvss_east_2,
+    dvdd_east_2,
+    dvss_east_3,
+    dvdd_east_3
+]
+
+PAD_NORTH: [
+    "bidir\\[41\\].pad",
+    "bidir\\[40\\].pad",
+    "bidir\\[39\\].pad",
+    "bidir\\[38\\].pad",
+    "bidir\\[37\\].pad",
+    "bidir\\[36\\].pad",
+    "bidir\\[35\\].pad",
+    "bidir\\[34\\].pad",
+
+    dvss_north_0,
+
+    "bidir\\[33\\].pad",
+    "bidir\\[32\\].pad",
+    "bidir\\[31\\].pad",
+    "bidir\\[30\\].pad",
+    "bidir\\[29\\].pad",
+    "bidir\\[28\\].pad",
+    "bidir\\[27\\].pad",
+    "bidir\\[26\\].pad"
+]
+
+
+PAD_WEST: [
+    dvdd_west_3,
+    dvss_west_3,
+    dvdd_west_2,
+    dvss_west_2,
+
+    "bidir\\[53\\].pad",
+    "bidir\\[52\\].pad",
+    "bidir\\[51\\].pad",
+    "bidir\\[50\\].pad",
+    "bidir\\[49\\].pad",
+    "bidir\\[48\\].pad",
+
+    dvdd_west_1,
+    dvss_west_1,
+
+    "bidir\\[47\\].pad",
+    "bidir\\[46\\].pad",
+    "bidir\\[45\\].pad",
+    "bidir\\[44\\].pad",
+
+    dvdd_west_0,
+    dvss_west_0,
+    
+    "bidir\\[43\\].pad",
+    "bidir\\[42\\].pad"
+]
+
+# SDC files
+PNR_SDC_FILE: dir::chip_top.sdc
+SIGNOFF_SDC_FILE: dir::chip_top.sdc
+FALLBACK_SDC: dir::chip_top.sdc
+
+# Power / ground nets
+VDD_NETS:
+- VDD
+GND_NETS:
+- VSS
+
+# We need to add gf180mcu_fd_io__bi_24t
+# due to the unused Y output for output only pads
+IGNORE_DISCONNECTED_MODULES:
+- gf180mcu_fd_io__bi_24t
+- gf180mcu_ws_ip__id
+- gf180mcu_ws_ip__logo
+
+# Clock
+CLOCK_PORT: clk_PAD
+CLOCK_NET: clk_pad/Y
+
+CLOCK_PERIOD: 95
+
+# Floorplanning
+FP_SIZING: absolute
+# 3880umx5070um including 26um
+# for the sealring on all sides
+DIE_AREA: [0, 0, 3932, 5122]
+CORE_AREA: [442, 442, 3490, 4680]
+EXTRA_VERILOG_MODELS: ["dir::../src/sram_blackbox.v"]
+
+# Increase for more logic
+# on your die
+PL_TARGET_DENSITY_PCT: 35
+GRT_ALLOW_CONGESTION: true
+
+# PDN
+PDN_MULTILAYER: True
+PDN_CORE_RING: True
+PDN_ENABLE_RAILS: False
+# Maximum metal width without slotting: 30um
+PDN_CORE_RING_VWIDTH: 5
+PDN_CORE_RING_HWIDTH: 5
+PDN_CORE_RING_VOFFSET: 3
+PDN_CORE_RING_HOFFSET: 3
+PDN_CORE_RING_VSPACING: 2
+PDN_CORE_RING_HSPACING: 2
+PDN_HPITCH: 28
+PDN_VPITCH: 28
+PDN_CORE_RING_CONNECT_TO_PADS: True
+PDN_MACRO_CONNECTIONS: ["wrapped_as2650 VDD VSS VDD VSS", "sid VDD VSS VDD VSS", "timers VDD VSS VDD VSS", "ram_controller VDD VSS VDD VSS", "gpios VDD VSS VDD VSS", "serial_ports VDD VSS VDD VSS", "boot_rom VDD VSS VDD VSS", "sram0 VDD VSS VDD VSS", "sram1 VDD VSS VDD VSS", "sram2 VDD VSS VDD VSS", "sram3 VDD VSS VDD VSS", "sram4 VDD VSS VDD VSS", "sram4 VDD VSS VDD VSS", "sram5 VDD VSS VDD VSS", "sram6 VDD VSS VDD VSS", "sram7 VDD VSS VDD VSS"]
+PDN_ENABLE_PINS: True
+PDN_CORE_VERTICAL_LAYER: Metal2
+PDN_CORE_HORIZONTAL_LAYER: Metal3
+
+# Due to OpenROAD bug
+# https://github.com/The-OpenROAD-Project/OpenROAD/issues/8229
+#PL_TIME_DRIVEN: False
+#PL_ROUTABILITY_DRIVEN: False
+
+# Prevent false positive DRC errors in I/O cells
+MAGIC_GDS_FLATGLOB:
+# For contacts
+- "*_CDNS_*"
+# COMP and Poly2 filler cells need to be 
+# flattened to form a "filltrans" layer
+- "COMP_fill_cell"
+- "Poly2_fill_cell"
+
+# Because we have multiple power pads for one power domain
+MAGIC_EXT_UNIQUE: notopports
+
+MACROS:
+  sid:
+    gds:
+      - dir::../macros/SID/runs/latest/final/gds/sid.gds
+    lef:
+      - dir::../macros/SID/runs/latest/final/lef/sid.lef
+    pnl:
+      - dir::../macros/SID/runs/latest/final/pnl/sid.pnl.v
+    nl:
+      - dir::../macros/SID/runs/latest/final/nl/sid.nl.v
+    spef:
+      min_*: dir::../macros/SID/runs/latest/final/spef/min/sid.min.spef
+      nom_*: dir::../macros/SID/runs/latest/final/spef/nom/sid.nom.spef
+      max_*: dir::../macros/SID/runs/latest/final/spef/max/sid.max.spef
+    lib:
+      max_ff_n40C_5v50: dir::../macros/SID/runs/latest/final/lib/max_ff_n40C_5v50/sid__max_ff_n40C_5v50.lib
+      max_ss_125C_4v50: dir::../macros/SID/runs/latest/final/lib/max_ss_125C_4v50/sid__max_ss_125C_4v50.lib
+      max_tt_025C_5v00: dir::../macros/SID/runs/latest/final/lib/max_tt_025C_5v00/sid__max_tt_025C_5v00.lib
+      min_ff_n40C_5v50: dir::../macros/SID/runs/latest/final/lib/min_ff_n40C_5v50/sid__min_ff_n40C_5v50.lib
+      min_ss_125C_4v50: dir::../macros/SID/runs/latest/final/lib/min_ss_125C_4v50/sid__min_ss_125C_4v50.lib
+      min_tt_025C_5v00: dir::../macros/SID/runs/latest/final/lib/min_tt_025C_5v00/sid__min_tt_025C_5v00.lib
+      nom_ff_n40C_5v50: dir::../macros/SID/runs/latest/final/lib/nom_ff_n40C_5v50/sid__nom_ff_n40C_5v50.lib
+      nom_ss_125C_4v50: dir::../macros/SID/runs/latest/final/lib/nom_ss_125C_4v50/sid__nom_ss_125C_4v50.lib
+      nom_tt_025C_5v00: dir::../macros/SID/runs/latest/final/lib/nom_tt_025C_5v00/sid__nom_tt_025C_5v00.lib
+    instances:
+      sid:
+        location: [2000, 2500]
+        orientation: N
+  timers:
+    gds:
+      - dir::../macros/Timers/runs/latest/final/gds/timers.gds
+    lef:
+      - dir::../macros/Timers/runs/latest/final/lef/timers.lef
+    pnl:
+      - dir::../macros/Timers/runs/latest/final/pnl/timers.pnl.v
+    nl:
+      - dir::../macros/Timers/runs/latest/final/nl/timers.nl.v
+    spef:
+      min_*: dir::../macros/Timers/runs/latest/final/spef/min/timers.min.spef
+      nom_*: dir::../macros/Timers/runs/latest/final/spef/nom/timers.nom.spef
+      max_*: dir::../macros/Timers/runs/latest/final/spef/max/timers.max.spef
+    lib:
+      max_ff_n40C_5v50: dir::../macros/Timers/runs/latest/final/lib/max_ff_n40C_5v50/timers__max_ff_n40C_5v50.lib
+      max_ss_125C_4v50: dir::../macros/Timers/runs/latest/final/lib/max_ss_125C_4v50/timers__max_ss_125C_4v50.lib
+      max_tt_025C_5v00: dir::../macros/Timers/runs/latest/final/lib/max_tt_025C_5v00/timers__max_tt_025C_5v00.lib
+      min_ff_n40C_5v50: dir::../macros/Timers/runs/latest/final/lib/min_ff_n40C_5v50/timers__min_ff_n40C_5v50.lib
+      min_ss_125C_4v50: dir::../macros/Timers/runs/latest/final/lib/min_ss_125C_4v50/timers__min_ss_125C_4v50.lib
+      min_tt_025C_5v00: dir::../macros/Timers/runs/latest/final/lib/min_tt_025C_5v00/timers__min_tt_025C_5v00.lib
+      nom_ff_n40C_5v50: dir::../macros/Timers/runs/latest/final/lib/nom_ff_n40C_5v50/timers__nom_ff_n40C_5v50.lib
+      nom_ss_125C_4v50: dir::../macros/Timers/runs/latest/final/lib/nom_ss_125C_4v50/timers__nom_ss_125C_4v50.lib
+      nom_tt_025C_5v00: dir::../macros/Timers/runs/latest/final/lib/nom_tt_025C_5v00/timers__nom_tt_025C_5v00.lib
+    instances:
+      timers:
+        location: [2850, 2750]
+        orientation: N
+  boot_rom:
+    gds:
+      - dir::../macros/BootROM/runs/latest/final/gds/boot_rom.gds
+    lef:
+      - dir::../macros/BootROM/runs/latest/final/lef/boot_rom.lef
+    pnl:
+      - dir::../macros/BootROM/runs/latest/final/pnl/boot_rom.pnl.v
+    nl:
+      - dir::../macros/BootROM/runs/latest/final/nl/boot_rom.nl.v
+    spef:
+      min_*: dir::../macros/BootROM/runs/latest/final/spef/min/boot_rom.min.spef
+      nom_*: dir::../macros/BootROM/runs/latest/final/spef/nom/boot_rom.nom.spef
+      max_*: dir::../macros/BootROM/runs/latest/final/spef/max/boot_rom.max.spef
+    lib:
+      max_ff_n40C_5v50: dir::../macros/BootROM/runs/latest/final/lib/max_ff_n40C_5v50/boot_rom__max_ff_n40C_5v50.lib
+      max_ss_125C_4v50: dir::../macros/BootROM/runs/latest/final/lib/max_ss_125C_4v50/boot_rom__max_ss_125C_4v50.lib
+      max_tt_025C_5v00: dir::../macros/BootROM/runs/latest/final/lib/max_tt_025C_5v00/boot_rom__max_tt_025C_5v00.lib
+      min_ff_n40C_5v50: dir::../macros/BootROM/runs/latest/final/lib/min_ff_n40C_5v50/boot_rom__min_ff_n40C_5v50.lib
+      min_ss_125C_4v50: dir::../macros/BootROM/runs/latest/final/lib/min_ss_125C_4v50/boot_rom__min_ss_125C_4v50.lib
+      min_tt_025C_5v00: dir::../macros/BootROM/runs/latest/final/lib/min_tt_025C_5v00/boot_rom__min_tt_025C_5v00.lib
+      nom_ff_n40C_5v50: dir::../macros/BootROM/runs/latest/final/lib/nom_ff_n40C_5v50/boot_rom__nom_ff_n40C_5v50.lib
+      nom_ss_125C_4v50: dir::../macros/BootROM/runs/latest/final/lib/nom_ss_125C_4v50/boot_rom__nom_ss_125C_4v50.lib
+      nom_tt_025C_5v00: dir::../macros/BootROM/runs/latest/final/lib/nom_tt_025C_5v00/boot_rom__nom_tt_025C_5v00.lib
+    instances:
+      boot_rom:
+        location: [2600, 2000]
+        orientation: N
+  wrapped_as2650:
+    gds:
+      - dir::../macros/AS2650/runs/latest/final/gds/wrapped_as2650.gds
+    lef:
+      - dir::../macros/AS2650/runs/latest/final/lef/wrapped_as2650.lef
+    pnl:
+      - dir::../macros/AS2650/runs/latest/final/pnl/wrapped_as2650.pnl.v
+    nl:
+      - dir::../macros/AS2650/runs/latest/final/nl/wrapped_as2650.nl.v
+    spef:
+      min_*: dir::../macros/AS2650/runs/latest/final/spef/min/wrapped_as2650.min.spef
+      nom_*: dir::../macros/AS2650/runs/latest/final/spef/nom/wrapped_as2650.nom.spef
+      max_*: dir::../macros/AS2650/runs/latest/final/spef/max/wrapped_as2650.max.spef
+    lib:
+      max_ff_n40C_5v50: dir::../macros/AS2650/runs/latest/final/lib/max_ff_n40C_5v50/wrapped_as2650__max_ff_n40C_5v50.lib
+      max_ss_125C_4v50: dir::../macros/AS2650/runs/latest/final/lib/max_ss_125C_4v50/wrapped_as2650__max_ss_125C_4v50.lib
+      max_tt_025C_5v00: dir::../macros/AS2650/runs/latest/final/lib/max_tt_025C_5v00/wrapped_as2650__max_tt_025C_5v00.lib
+      min_ff_n40C_5v50: dir::../macros/AS2650/runs/latest/final/lib/min_ff_n40C_5v50/wrapped_as2650__min_ff_n40C_5v50.lib
+      min_ss_125C_4v50: dir::../macros/AS2650/runs/latest/final/lib/min_ss_125C_4v50/wrapped_as2650__min_ss_125C_4v50.lib
+      min_tt_025C_5v00: dir::../macros/AS2650/runs/latest/final/lib/min_tt_025C_5v00/wrapped_as2650__min_tt_025C_5v00.lib
+      nom_ff_n40C_5v50: dir::../macros/AS2650/runs/latest/final/lib/nom_ff_n40C_5v50/wrapped_as2650__nom_ff_n40C_5v50.lib
+      nom_ss_125C_4v50: dir::../macros/AS2650/runs/latest/final/lib/nom_ss_125C_4v50/wrapped_as2650__nom_ss_125C_4v50.lib
+      nom_tt_025C_5v00: dir::../macros/AS2650/runs/latest/final/lib/nom_tt_025C_5v00/wrapped_as2650__nom_tt_025C_5v00.lib
+    instances:
+      wrapped_as2650:
+        location: [800, 1800]
+        orientation: N
+  gpios:
+    gds:
+      - dir::../macros/GPIO/runs/latest/final/gds/gpios.gds
+    lef:
+      - dir::../macros/GPIO/runs/latest/final/lef/gpios.lef
+    pnl:
+      - dir::../macros/GPIO/runs/latest/final/pnl/gpios.pnl.v
+    nl:
+      - dir::../macros/GPIO/runs/latest/final/nl/gpios.nl.v
+    spef:
+      min_*: dir::../macros/GPIO/runs/latest/final/spef/min/gpios.min.spef
+      nom_*: dir::../macros/GPIO/runs/latest/final/spef/nom/gpios.nom.spef
+      max_*: dir::../macros/GPIO/runs/latest/final/spef/max/gpios.max.spef
+    lib:
+      max_ff_n40C_5v50: dir::../macros/GPIO/runs/latest/final/lib/max_ff_n40C_5v50/gpios__max_ff_n40C_5v50.lib
+      max_ss_125C_4v50: dir::../macros/GPIO/runs/latest/final/lib/max_ss_125C_4v50/gpios__max_ss_125C_4v50.lib
+      max_tt_025C_5v00: dir::../macros/GPIO/runs/latest/final/lib/max_tt_025C_5v00/gpios__max_tt_025C_5v00.lib
+      min_ff_n40C_5v50: dir::../macros/GPIO/runs/latest/final/lib/min_ff_n40C_5v50/gpios__min_ff_n40C_5v50.lib
+      min_ss_125C_4v50: dir::../macros/GPIO/runs/latest/final/lib/min_ss_125C_4v50/gpios__min_ss_125C_4v50.lib
+      min_tt_025C_5v00: dir::../macros/GPIO/runs/latest/final/lib/min_tt_025C_5v00/gpios__min_tt_025C_5v00.lib
+      nom_ff_n40C_5v50: dir::../macros/GPIO/runs/latest/final/lib/nom_ff_n40C_5v50/gpios__nom_ff_n40C_5v50.lib
+      nom_ss_125C_4v50: dir::../macros/GPIO/runs/latest/final/lib/nom_ss_125C_4v50/gpios__nom_ss_125C_4v50.lib
+      nom_tt_025C_5v00: dir::../macros/GPIO/runs/latest/final/lib/nom_tt_025C_5v00/gpios__nom_tt_025C_5v00.lib
+    instances:
+      gpios:
+        location: [2900, 2400]
+        orientation: N
+  ram_controller:
+    gds:
+      - dir::../macros/RAMController/runs/latest/final/gds/ram_controller.gds
+    lef:
+      - dir::../macros/RAMController/runs/latest/final/lef/ram_controller.lef
+    pnl:
+      - dir::../macros/RAMController/runs/latest/final/pnl/ram_controller.pnl.v
+    nl:
+      - dir::../macros/RAMController/runs/latest/final/nl/ram_controller.nl.v
+    spef:
+      min_*: dir::../macros/RAMController/runs/latest/final/spef/min/ram_controller.min.spef
+      nom_*: dir::../macros/RAMController/runs/latest/final/spef/nom/ram_controller.nom.spef
+      max_*: dir::../macros/RAMController/runs/latest/final/spef/max/ram_controller.max.spef
+    lib:
+      max_ff_n40C_5v50: dir::../macros/RAMController/runs/latest/final/lib/max_ff_n40C_5v50/ram_controller__max_ff_n40C_5v50.lib
+      max_ss_125C_4v50: dir::../macros/RAMController/runs/latest/final/lib/max_ss_125C_4v50/ram_controller__max_ss_125C_4v50.lib
+      max_tt_025C_5v00: dir::../macros/RAMController/runs/latest/final/lib/max_tt_025C_5v00/ram_controller__max_tt_025C_5v00.lib
+      min_ff_n40C_5v50: dir::../macros/RAMController/runs/latest/final/lib/min_ff_n40C_5v50/ram_controller__min_ff_n40C_5v50.lib
+      min_ss_125C_4v50: dir::../macros/RAMController/runs/latest/final/lib/min_ss_125C_4v50/ram_controller__min_ss_125C_4v50.lib
+      min_tt_025C_5v00: dir::../macros/RAMController/runs/latest/final/lib/min_tt_025C_5v00/ram_controller__min_tt_025C_5v00.lib
+      nom_ff_n40C_5v50: dir::../macros/RAMController/runs/latest/final/lib/nom_ff_n40C_5v50/ram_controller__nom_ff_n40C_5v50.lib
+      nom_ss_125C_4v50: dir::../macros/RAMController/runs/latest/final/lib/nom_ss_125C_4v50/ram_controller__nom_ss_125C_4v50.lib
+      nom_tt_025C_5v00: dir::../macros/RAMController/runs/latest/final/lib/nom_tt_025C_5v00/ram_controller__nom_tt_025C_5v00.lib
+    instances:
+      ram_controller:
+        location: [800, 1300]
+        orientation: N
+  serial_ports:
+    gds:
+      - dir::../macros/SerialPorts/runs/latest/final/gds/serial_ports.gds
+    lef:
+      - dir::../macros/SerialPorts/runs/latest/final/lef/serial_ports.lef
+    pnl:
+      - dir::../macros/SerialPorts/runs/latest/final/pnl/serial_ports.pnl.v
+    nl:
+      - dir::../macros/SerialPorts/runs/latest/final/nl/serial_ports.nl.v
+    spef:
+      min_*: dir::../macros/SerialPorts/runs/latest/final/spef/min/serial_ports.min.spef
+      nom_*: dir::../macros/SerialPorts/runs/latest/final/spef/nom/serial_ports.nom.spef
+      max_*: dir::../macros/SerialPorts/runs/latest/final/spef/max/serial_ports.max.spef
+    lib:
+      max_ff_n40C_5v50: dir::../macros/SerialPorts/runs/latest/final/lib/max_ff_n40C_5v50/serial_ports__max_ff_n40C_5v50.lib
+      max_ss_125C_4v50: dir::../macros/SerialPorts/runs/latest/final/lib/max_ss_125C_4v50/serial_ports__max_ss_125C_4v50.lib
+      max_tt_025C_5v00: dir::../macros/SerialPorts/runs/latest/final/lib/max_tt_025C_5v00/serial_ports__max_tt_025C_5v00.lib
+      min_ff_n40C_5v50: dir::../macros/SerialPorts/runs/latest/final/lib/min_ff_n40C_5v50/serial_ports__min_ff_n40C_5v50.lib
+      min_ss_125C_4v50: dir::../macros/SerialPorts/runs/latest/final/lib/min_ss_125C_4v50/serial_ports__min_ss_125C_4v50.lib
+      min_tt_025C_5v00: dir::../macros/SerialPorts/runs/latest/final/lib/min_tt_025C_5v00/serial_ports__min_tt_025C_5v00.lib
+      nom_ff_n40C_5v50: dir::../macros/SerialPorts/runs/latest/final/lib/nom_ff_n40C_5v50/serial_ports__nom_ff_n40C_5v50.lib
+      nom_ss_125C_4v50: dir::../macros/SerialPorts/runs/latest/final/lib/nom_ss_125C_4v50/serial_ports__nom_ss_125C_4v50.lib
+      nom_tt_025C_5v00: dir::../macros/SerialPorts/runs/latest/final/lib/nom_tt_025C_5v00/serial_ports__nom_tt_025C_5v00.lib
+    instances:
+      serial_ports:
+        location: [1500, 3000]
+        orientation: N
+  unused:
+    gds:
+      - dir::../macros/UnusedIO/runs/latest/final/gds/unused.gds
+    lef:
+      - dir::../macros/UnusedIO/runs/latest/final/lef/unused.lef
+    pnl:
+      - dir::../macros/UnusedIO/runs/latest/final/pnl/unused.pnl.v
+    nl:
+      - dir::../macros/UnusedIO/runs/latest/final/nl/unused.nl.v
+    spef:
+      min_*: dir::../macros/UnusedIO/runs/latest/final/spef/min/unused.min.spef
+      nom_*: dir::../macros/UnusedIO/runs/latest/final/spef/nom/unused.nom.spef
+      max_*: dir::../macros/UnusedIO/runs/latest/final/spef/max/unused.max.spef
+    lib:
+      max_ff_n40C_5v50: dir::../macros/UnusedIO/runs/latest/final/lib/max_ff_n40C_5v50/unused__max_ff_n40C_5v50.lib
+      max_ss_125C_4v50: dir::../macros/UnusedIO/runs/latest/final/lib/max_ss_125C_4v50/unused__max_ss_125C_4v50.lib
+      max_tt_025C_5v00: dir::../macros/UnusedIO/runs/latest/final/lib/max_tt_025C_5v00/unused__max_tt_025C_5v00.lib
+      min_ff_n40C_5v50: dir::../macros/UnusedIO/runs/latest/final/lib/min_ff_n40C_5v50/unused__min_ff_n40C_5v50.lib
+      min_ss_125C_4v50: dir::../macros/UnusedIO/runs/latest/final/lib/min_ss_125C_4v50/unused__min_ss_125C_4v50.lib
+      min_tt_025C_5v00: dir::../macros/UnusedIO/runs/latest/final/lib/min_tt_025C_5v00/unused__min_tt_025C_5v00.lib
+      nom_ff_n40C_5v50: dir::../macros/UnusedIO/runs/latest/final/lib/nom_ff_n40C_5v50/unused__nom_ff_n40C_5v50.lib
+      nom_ss_125C_4v50: dir::../macros/UnusedIO/runs/latest/final/lib/nom_ss_125C_4v50/unused__nom_ss_125C_4v50.lib
+      nom_tt_025C_5v00: dir::../macros/UnusedIO/runs/latest/final/lib/nom_tt_025C_5v00/unused__nom_tt_025C_5v00.lib
+    instances:
+      unused:
+        location: [2900, 2000]
+        orientation: N
+  gf180_ram_512x8_wrapper_as2650:
+    gds:
+      - dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.gds
+    lef:
+      - dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.lef
+    pnl:
+      - dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.pnl.v
+    lib:
+      min_*: dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.lib
+      nom_*: dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.lib
+      max_*: dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.lib
+    instances:
+      sram0:
+        location: [800, 700]
+        orientation: S
+      sram1:
+        location: [1300, 700]
+        orientation: S
+      sram2:
+        location: [1800, 700]
+        orientation: S
+      sram3:
+        location: [2300, 700]
+        orientation: S
+      sram4:
+        location: [2800, 700]
+        orientation: S
+      sram5:
+        location: [2850, 1300]
+        orientation: N
+      sram6:
+        location: [2300, 1300]
+        orientation: S
+      sram7:
+        location: [2000, 1900]
+        orientation: N
+  avali_logo:
+    gds:
+      - dir::../macros/AvaliLogo/avali_logo.gds
+    lef:
+      - dir::../macros/AvaliLogo/avali_logo.lef
+    vh:
+      - dir::../macros/AvaliLogo/avali_logo.v
+    instances:
+      avali_logo:
+        location: [800, 2800]
+        orientation: N
+  gf180mcu_ws_ip__id:
+    gds:
+      - dir::../ip/gf180mcu_ws_ip__id/gds/gf180mcu_ws_ip__id.gds
+    lef:
+      - dir::../ip/gf180mcu_ws_ip__id/lef/gf180mcu_ws_ip__id.lef
+    vh:
+      - dir::../ip/gf180mcu_ws_ip__id/vh/gf180mcu_ws_ip__id.v
+    lib:
+      "*":
+        - dir::../ip/gf180mcu_ws_ip__id/lib/gf180mcu_ws_ip__id.lib
+    instances:
+      chip_id:
+        location: [26, 26]
+        orientation: N
+  gf180mcu_ws_ip__id:
+    gds:
+      - dir::../ip/gf180mcu_ws_ip__id/gds/gf180mcu_ws_ip__id.gds
+    lef:
+      - dir::../ip/gf180mcu_ws_ip__id/lef/gf180mcu_ws_ip__id.lef
+    vh:
+      - dir::../ip/gf180mcu_ws_ip__id/vh/gf180mcu_ws_ip__id.v
+    lib:
+      "*":
+        - dir::../ip/gf180mcu_ws_ip__id/lib/gf180mcu_ws_ip__id.lib
+    instances:
+      chip_id:
+        location: [26, 26]
+        orientation: N
+  gf180mcu_ws_ip__logo:
+    gds:
+      - dir::../ip/gf180mcu_ws_ip__logo/gds/gf180mcu_ws_ip__logo.gds
+    lef:
+      - dir::../ip/gf180mcu_ws_ip__logo/lef/gf180mcu_ws_ip__logo.lef
+    vh:
+      - dir::../ip/gf180mcu_ws_ip__logo/vh/gf180mcu_ws_ip__logo.v
+    lib:
+      "*":
+        - dir::../ip/gf180mcu_ws_ip__logo/lib/gf180mcu_ws_ip__logo.lib
+    instances:
+      wafer_space_logo:
+        location: [3762.75, 4952.75]
+        orientation: N
+
+# Make sure netgen doesn't create 'no_connect' nets
+# Not needed since netgen 1.5.303
+LVS_FLATTEN_CELLS:
+- gf180mcu_ws_ip__id
+- gf180mcu_ws_ip__logo
+
+# gf180mcu_ws_ip__id has no ports and components
+# therefore make it an abstract cell in the layout
+MAGIC_EXT_ABSTRACT_CELLS:
+- gf180mcu_ws_ip__id
+- gf180mcu_ws_ip__logo
