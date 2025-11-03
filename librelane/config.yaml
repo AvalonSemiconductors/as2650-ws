@@ -19,6 +19,9 @@ meta:
     OpenROAD.STAMidPnr: null
     OpenROAD.CheckAntennas: null
     OpenROAD.FillInsertion: null
+    # Temporary until SRAM macro false positives are fixed
+    Magic.DRC: null
+    Checker.MagicDRC: null
 
 DESIGN_NAME: chip_top
 VERILOG_FILES:
@@ -147,12 +150,13 @@ IGNORE_DISCONNECTED_MODULES:
 - gf180mcu_fd_io__bi_24t
 - gf180mcu_ws_ip__id
 - gf180mcu_ws_ip__logo
+- avali_logo
 
 # Clock
 CLOCK_PORT: clk_PAD
 CLOCK_NET: clk_pad/Y
 
-CLOCK_PERIOD: 95
+CLOCK_PERIOD: 90
 
 # Floorplanning
 FP_SIZING: absolute
@@ -189,6 +193,8 @@ PDN_MACRO_CONNECTIONS: ["wrapped_as2650 VDD VSS VDD VSS", "sid VDD VSS VDD VSS",
 MAGIC_GDS_FLATGLOB:
 # For contacts
 - "*_CDNS_*"
+# For SRAM
+- "gf180mcu_fd_ip_sram__*"
 # COMP and Poly2 filler cells need to be 
 # flattened to form a "filltrans" layer
 - "COMP_fill_cell"
@@ -509,9 +515,11 @@ MACROS:
 LVS_FLATTEN_CELLS:
 - gf180mcu_ws_ip__id
 - gf180mcu_ws_ip__logo
+- avali_logo
 
 # gf180mcu_ws_ip__id has no ports and components
 # therefore make it an abstract cell in the layout
 MAGIC_EXT_ABSTRACT_CELLS:
 - gf180mcu_ws_ip__id
 - gf180mcu_ws_ip__logo
+- avali_logo
