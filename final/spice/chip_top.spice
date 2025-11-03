@@ -1,0 +1,1679 @@
+* NGSPICE file created from chip_top.ext - technology: gf180mcuD
+
+* Black-box entry subcircuit for gf180mcu_fd_io__bi_24t abstract view
+.subckt gf180mcu_fd_io__bi_24t A CS DVDD DVSS IE OE PAD PD PU SL VDD VSS Y
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_io__fill10 abstract view
+.subckt gf180mcu_fd_io__fill10 DVDD DVSS VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_io__fill5 abstract view
+.subckt gf180mcu_fd_io__fill5 DVDD DVSS VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180_ram_512x8_wrapper_as2650 abstract view
+.subckt gf180_ram_512x8_wrapper_as2650 A[0] A[1] A[2] A[3] A[4] A[5] A[6] A[7] A[8]
++ CEN CLK D[0] D[1] D[2] D[3] D[4] D[5] D[6] D[7] GWEN Q[0] Q[1] Q[2] Q[3] Q[4] Q[5]
++ Q[6] Q[7] VDD VSS WEN[0] WEN[1] WEN[2] WEN[3] WEN[4] WEN[5] WEN[6] WEN[7]
+.ends
+
+* Black-box entry subcircuit for gf180mcu_ws_io__dvdd abstract view
+.subckt gf180mcu_ws_io__dvdd DVDD DVSS VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_ws_io__dvss abstract view
+.subckt gf180mcu_ws_io__dvss DVDD DVSS VDD
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_io__fill1 abstract view
+.subckt gf180mcu_fd_io__fill1 DVDD DVSS VDD VSS
+.ends
+
+* Black-box entry subcircuit for timers abstract view
+.subckt timers VDD VSS addr[0] addr[1] addr[2] addr[3] addr[4] addr[5] bus_cyc bus_we
++ clk_i data_in[0] data_in[1] data_in[2] data_in[3] data_in[4] data_in[5] data_in[6]
++ data_in[7] data_out[0] data_out[1] data_out[2] data_out[3] data_out[4] data_out[5]
++ data_out[6] data_out[7] irq1 irq2 irq5 pwm0 pwm1 pwm2 rst tmr0_clk tmr0_o tmr1_clk
++ tmr1_o
+.ends
+
+* Black-box entry subcircuit for avali_logo abstract view
+.subckt avali_logo
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_io__cor abstract view
+.subckt gf180mcu_fd_io__cor DVDD DVSS VDD VSS
+.ends
+
+* Black-box entry subcircuit for unused abstract view
+.subckt unused VDD VSS clk_i io_cs[0] io_cs[10] io_cs[11] io_cs[12] io_cs[13] io_cs[14]
++ io_cs[15] io_cs[1] io_cs[2] io_cs[3] io_cs[4] io_cs[5] io_cs[6] io_cs[7] io_cs[8]
++ io_cs[9] io_ie[0] io_ie[10] io_ie[11] io_ie[12] io_ie[13] io_ie[14] io_ie[15] io_ie[1]
++ io_ie[2] io_ie[3] io_ie[4] io_ie[5] io_ie[6] io_ie[7] io_ie[8] io_ie[9] io_in[0]
++ io_in[10] io_in[11] io_in[12] io_in[13] io_in[14] io_in[15] io_in[1] io_in[2] io_in[3]
++ io_in[4] io_in[5] io_in[6] io_in[7] io_in[8] io_in[9] io_oe[0] io_oe[10] io_oe[11]
++ io_oe[12] io_oe[13] io_oe[14] io_oe[15] io_oe[1] io_oe[2] io_oe[3] io_oe[4] io_oe[5]
++ io_oe[6] io_oe[7] io_oe[8] io_oe[9] io_out[0] io_out[10] io_out[11] io_out[12] io_out[13]
++ io_out[14] io_out[15] io_out[1] io_out[2] io_out[3] io_out[4] io_out[5] io_out[6]
++ io_out[7] io_out[8] io_out[9] io_pd[0] io_pd[10] io_pd[11] io_pd[12] io_pd[13] io_pd[14]
++ io_pd[15] io_pd[1] io_pd[2] io_pd[3] io_pd[4] io_pd[5] io_pd[6] io_pd[7] io_pd[8]
++ io_pd[9] io_pu[0] io_pu[10] io_pu[11] io_pu[12] io_pu[13] io_pu[14] io_pu[15] io_pu[1]
++ io_pu[2] io_pu[3] io_pu[4] io_pu[5] io_pu[6] io_pu[7] io_pu[8] io_pu[9] io_sl[0]
++ io_sl[10] io_sl[11] io_sl[12] io_sl[13] io_sl[14] io_sl[15] io_sl[1] io_sl[2] io_sl[3]
++ io_sl[4] io_sl[5] io_sl[6] io_sl[7] io_sl[8] io_sl[9] rst
+.ends
+
+* Black-box entry subcircuit for sid abstract view
+.subckt sid DAC_clk DAC_dat_1 DAC_dat_2 DAC_le VDD VSS addr[0] addr[1] addr[2] addr[3]
++ addr[4] addr[5] bus_cyc bus_in[0] bus_in[1] bus_in[2] bus_in[3] bus_in[4] bus_in[5]
++ bus_in[6] bus_in[7] bus_out[0] bus_out[1] bus_out[2] bus_out[3] bus_out[4] bus_out[5]
++ bus_out[6] bus_out[7] bus_we clk rst
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_io__fillnc abstract view
+.subckt gf180mcu_fd_io__fillnc DVDD DVSS VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_ws_ip__id abstract view
+.subckt gf180mcu_ws_ip__id
+.ends
+
+* Black-box entry subcircuit for gpios abstract view
+.subckt gpios DAC_clk DAC_d1 DAC_d2 DAC_le RXD TXD VDD VSS addr[0] addr[1] addr[2]
++ addr[3] bus_cyc bus_we clk_i data_in[0] data_in[1] data_in[2] data_in[3] data_in[4]
++ data_in[5] data_in[6] data_in[7] data_out[0] data_out[1] data_out[2] data_out[3]
++ data_out[4] data_out[5] data_out[6] data_out[7] io_cs[0] io_cs[10] io_cs[11] io_cs[12]
++ io_cs[13] io_cs[14] io_cs[15] io_cs[1] io_cs[2] io_cs[3] io_cs[4] io_cs[5] io_cs[6]
++ io_cs[7] io_cs[8] io_cs[9] io_ie[0] io_ie[10] io_ie[11] io_ie[12] io_ie[13] io_ie[14]
++ io_ie[15] io_ie[1] io_ie[2] io_ie[3] io_ie[4] io_ie[5] io_ie[6] io_ie[7] io_ie[8]
++ io_ie[9] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14] io_in[15] io_in[1]
++ io_in[2] io_in[3] io_in[4] io_in[5] io_in[6] io_in[7] io_in[8] io_in[9] io_oe[0]
++ io_oe[10] io_oe[11] io_oe[12] io_oe[13] io_oe[14] io_oe[15] io_oe[1] io_oe[2] io_oe[3]
++ io_oe[4] io_oe[5] io_oe[6] io_oe[7] io_oe[8] io_oe[9] io_out[0] io_out[10] io_out[11]
++ io_out[12] io_out[13] io_out[14] io_out[15] io_out[1] io_out[2] io_out[3] io_out[4]
++ io_out[5] io_out[6] io_out[7] io_out[8] io_out[9] io_pd[0] io_pd[10] io_pd[11] io_pd[12]
++ io_pd[13] io_pd[14] io_pd[15] io_pd[1] io_pd[2] io_pd[3] io_pd[4] io_pd[5] io_pd[6]
++ io_pd[7] io_pd[8] io_pd[9] io_pu[0] io_pu[10] io_pu[11] io_pu[12] io_pu[13] io_pu[14]
++ io_pu[15] io_pu[1] io_pu[2] io_pu[3] io_pu[4] io_pu[5] io_pu[6] io_pu[7] io_pu[8]
++ io_pu[9] io_sl[0] io_sl[10] io_sl[11] io_sl[12] io_sl[13] io_sl[14] io_sl[15] io_sl[1]
++ io_sl[2] io_sl[3] io_sl[4] io_sl[5] io_sl[6] io_sl[7] io_sl[8] io_sl[9] irq0 irq6
++ irq7 pwm0 pwm1 pwm2 rst tmr0_clk tmr0_o tmr1_clk tmr1_o
+.ends
+
+* Black-box entry subcircuit for serial_ports abstract view
+.subckt serial_ports RXD TXD VDD VSS addr[0] addr[1] addr[2] bus_cyc bus_we clk_i
++ data_in[0] data_in[1] data_in[2] data_in[3] data_in[4] data_in[5] data_in[6] data_in[7]
++ data_out[0] data_out[1] data_out[2] data_out[3] data_out[4] data_out[5] data_out[6]
++ data_out[7] io_cs[0] io_cs[1] io_cs[2] io_ie[0] io_ie[1] io_ie[2] io_in io_oe[0]
++ io_oe[1] io_oe[2] io_out[0] io_out[1] io_out[2] io_pd[0] io_pd[1] io_pd[2] io_pu[0]
++ io_pu[1] io_pu[2] io_sl[0] io_sl[1] io_sl[2] irq3 rst
+.ends
+
+* Black-box entry subcircuit for gf180mcu_ws_ip__logo abstract view
+.subckt gf180mcu_ws_ip__logo
+.ends
+
+* Black-box entry subcircuit for ram_controller abstract view
+.subckt ram_controller A_all[0] A_all[1] A_all[2] A_all[3] A_all[4] A_all[5] A_all[6]
++ A_all[7] A_all[8] CEN_all D_all[0] D_all[1] D_all[2] D_all[3] D_all[4] D_all[5]
++ D_all[6] D_all[7] GWEN_0 GWEN_1 GWEN_2 GWEN_3 GWEN_4 GWEN_5 GWEN_6 GWEN_7 Q0[0]
++ Q0[1] Q0[2] Q0[3] Q0[4] Q0[5] Q0[6] Q0[7] Q1[0] Q1[1] Q1[2] Q1[3] Q1[4] Q1[5] Q1[6]
++ Q1[7] Q2[0] Q2[1] Q2[2] Q2[3] Q2[4] Q2[5] Q2[6] Q2[7] Q3[0] Q3[1] Q3[2] Q3[3] Q3[4]
++ Q3[5] Q3[6] Q3[7] Q4[0] Q4[1] Q4[2] Q4[3] Q4[4] Q4[5] Q4[6] Q4[7] Q5[0] Q5[1] Q5[2]
++ Q5[3] Q5[4] Q5[5] Q5[6] Q5[7] Q6[0] Q6[1] Q6[2] Q6[3] Q6[4] Q6[5] Q6[6] Q6[7] Q7[0]
++ Q7[1] Q7[2] Q7[3] Q7[4] Q7[5] Q7[6] Q7[7] VDD VSS WEN_all[0] WEN_all[1] WEN_all[2]
++ WEN_all[3] WEN_all[4] WEN_all[5] WEN_all[6] WEN_all[7] WEb_ram bus_in[0] bus_in[1]
++ bus_in[2] bus_in[3] bus_in[4] bus_in[5] bus_in[6] bus_in[7] bus_out[0] bus_out[1]
++ bus_out[2] bus_out[3] bus_out[4] bus_out[5] bus_out[6] bus_out[7] clk_i ram_enabled
++ requested_addr[0] requested_addr[10] requested_addr[11] requested_addr[12] requested_addr[13]
++ requested_addr[14] requested_addr[15] requested_addr[1] requested_addr[2] requested_addr[3]
++ requested_addr[4] requested_addr[5] requested_addr[6] requested_addr[7] requested_addr[8]
++ requested_addr[9] rst
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_io__in_c abstract view
+.subckt gf180mcu_fd_io__in_c DVDD DVSS PAD PD PU VDD VSS Y
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_io__dvss abstract view
+.subckt gf180mcu_fd_io__dvss DVDD DVSS VDD
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_io__in_s abstract view
+.subckt gf180mcu_fd_io__in_s DVDD DVSS PAD PD PU VDD VSS Y
+.ends
+
+* Black-box entry subcircuit for boot_rom abstract view
+.subckt boot_rom VDD VSS bus_out[0] bus_out[1] bus_out[2] bus_out[3] bus_out[4] bus_out[5]
++ bus_out[6] bus_out[7] clk_i last_addr[0] last_addr[1] last_addr[2] last_addr[3]
++ last_addr[4] last_addr[5] last_addr[6] last_addr[7] rst
+.ends
+
+* Black-box entry subcircuit for wrapped_as2650 abstract view
+.subckt wrapped_as2650 VDD VSS WEb_ram boot_rom_en bus_addr[0] bus_addr[1] bus_addr[2]
++ bus_addr[3] bus_addr[4] bus_addr[5] bus_cyc bus_data_out[0] bus_data_out[1] bus_data_out[2]
++ bus_data_out[3] bus_data_out[4] bus_data_out[5] bus_data_out[6] bus_data_out[7]
++ bus_in_gpios[0] bus_in_gpios[1] bus_in_gpios[2] bus_in_gpios[3] bus_in_gpios[4]
++ bus_in_gpios[5] bus_in_gpios[6] bus_in_gpios[7] bus_in_serial_ports[0] bus_in_serial_ports[1]
++ bus_in_serial_ports[2] bus_in_serial_ports[3] bus_in_serial_ports[4] bus_in_serial_ports[5]
++ bus_in_serial_ports[6] bus_in_serial_ports[7] bus_in_sid[0] bus_in_sid[1] bus_in_sid[2]
++ bus_in_sid[3] bus_in_sid[4] bus_in_sid[5] bus_in_sid[6] bus_in_sid[7] bus_in_timers[0]
++ bus_in_timers[1] bus_in_timers[2] bus_in_timers[3] bus_in_timers[4] bus_in_timers[5]
++ bus_in_timers[6] bus_in_timers[7] bus_we_gpios bus_we_serial_ports bus_we_sid bus_we_timers
++ clk_i const_zero[0] const_zero[1] const_zero[2] const_zero[3] io_cs[0] io_cs[10]
++ io_cs[11] io_cs[12] io_cs[13] io_cs[14] io_cs[15] io_cs[16] io_cs[17] io_cs[18]
++ io_cs[1] io_cs[2] io_cs[3] io_cs[4] io_cs[5] io_cs[6] io_cs[7] io_cs[8] io_cs[9]
++ io_ie[0] io_ie[10] io_ie[11] io_ie[12] io_ie[13] io_ie[14] io_ie[15] io_ie[16] io_ie[17]
++ io_ie[18] io_ie[1] io_ie[2] io_ie[3] io_ie[4] io_ie[5] io_ie[6] io_ie[7] io_ie[8]
++ io_ie[9] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14] io_in[15] io_in[16]
++ io_in[17] io_in[18] io_in[1] io_in[2] io_in[3] io_in[4] io_in[5] io_in[6] io_in[7]
++ io_in[8] io_in[9] io_oe[0] io_oe[10] io_oe[11] io_oe[12] io_oe[13] io_oe[14] io_oe[15]
++ io_oe[16] io_oe[17] io_oe[18] io_oe[1] io_oe[2] io_oe[3] io_oe[4] io_oe[5] io_oe[6]
++ io_oe[7] io_oe[8] io_oe[9] io_out[0] io_out[10] io_out[11] io_out[12] io_out[13]
++ io_out[14] io_out[15] io_out[16] io_out[17] io_out[18] io_out[1] io_out[2] io_out[3]
++ io_out[4] io_out[5] io_out[6] io_out[7] io_out[8] io_out[9] io_pd[0] io_pd[10] io_pd[11]
++ io_pd[12] io_pd[13] io_pd[14] io_pd[15] io_pd[16] io_pd[17] io_pd[18] io_pd[1] io_pd[2]
++ io_pd[3] io_pd[4] io_pd[5] io_pd[6] io_pd[7] io_pd[8] io_pd[9] io_pu[0] io_pu[10]
++ io_pu[11] io_pu[12] io_pu[13] io_pu[14] io_pu[15] io_pu[16] io_pu[17] io_pu[18]
++ io_pu[1] io_pu[2] io_pu[3] io_pu[4] io_pu[5] io_pu[6] io_pu[7] io_pu[8] io_pu[9]
++ io_sl[0] io_sl[10] io_sl[11] io_sl[12] io_sl[13] io_sl[14] io_sl[15] io_sl[16] io_sl[17]
++ io_sl[18] io_sl[1] io_sl[2] io_sl[3] io_sl[4] io_sl[5] io_sl[6] io_sl[7] io_sl[8]
++ io_sl[9] irqs[0] irqs[1] irqs[2] irqs[3] irqs[4] irqs[5] irqs[6] last_addr[0] last_addr[10]
++ last_addr[11] last_addr[12] last_addr[13] last_addr[14] last_addr[15] last_addr[1]
++ last_addr[2] last_addr[3] last_addr[4] last_addr[5] last_addr[6] last_addr[7] last_addr[8]
++ last_addr[9] le_hi_act le_lo_act ram_bus_in[0] ram_bus_in[1] ram_bus_in[2] ram_bus_in[3]
++ ram_bus_in[4] ram_bus_in[5] ram_bus_in[6] ram_bus_in[7] ram_enabled requested_addr[0]
++ requested_addr[10] requested_addr[11] requested_addr[12] requested_addr[13] requested_addr[14]
++ requested_addr[15] requested_addr[1] requested_addr[2] requested_addr[3] requested_addr[4]
++ requested_addr[5] requested_addr[6] requested_addr[7] requested_addr[8] requested_addr[9]
++ reset_out rom_bus_in[0] rom_bus_in[1] rom_bus_in[2] rom_bus_in[3] rom_bus_in[4]
++ rom_bus_in[5] rom_bus_in[6] rom_bus_in[7] rom_bus_out[0] rom_bus_out[1] rom_bus_out[2]
++ rom_bus_out[3] rom_bus_out[4] rom_bus_out[5] rom_bus_out[6] rom_bus_out[7] rst_n
+.ends
+
+.subckt chip_top VDD VSS bidir_PAD[0] bidir_PAD[10] bidir_PAD[11] bidir_PAD[12] bidir_PAD[13]
++ bidir_PAD[14] bidir_PAD[15] bidir_PAD[16] bidir_PAD[17] bidir_PAD[18] bidir_PAD[19]
++ bidir_PAD[1] bidir_PAD[20] bidir_PAD[21] bidir_PAD[22] bidir_PAD[23] bidir_PAD[24]
++ bidir_PAD[25] bidir_PAD[26] bidir_PAD[27] bidir_PAD[28] bidir_PAD[29] bidir_PAD[2]
++ bidir_PAD[30] bidir_PAD[31] bidir_PAD[32] bidir_PAD[33] bidir_PAD[34] bidir_PAD[35]
++ bidir_PAD[36] bidir_PAD[37] bidir_PAD[38] bidir_PAD[39] bidir_PAD[3] bidir_PAD[40]
++ bidir_PAD[41] bidir_PAD[42] bidir_PAD[43] bidir_PAD[44] bidir_PAD[45] bidir_PAD[46]
++ bidir_PAD[47] bidir_PAD[48] bidir_PAD[49] bidir_PAD[4] bidir_PAD[50] bidir_PAD[51]
++ bidir_PAD[52] bidir_PAD[53] bidir_PAD[5] bidir_PAD[6] bidir_PAD[7] bidir_PAD[8]
++ bidir_PAD[9] clk_PAD rst_n_PAD
+Xbidir\[32\].pad bidir_CORE2PAD\[32\] bidir_CORE2PAD_CS\[32\] VDD VSS bidir_CORE2PAD_IE\[32\]
++ bidir_CORE2PAD_OE\[32\] bidir_PAD[32] bidir_CORE2PAD_PD\[32\] bidir_CORE2PAD_PU\[32\]
++ bidir_CORE2PAD_SL\[32\] VDD VSS bidir_PAD2CORE\[32\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_9_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[47\].pad bidir_CORE2PAD\[47\] bidir_CORE2PAD_CS\[47\] VDD VSS bidir_CORE2PAD_IE\[47\]
++ bidir_CORE2PAD_OE\[47\] bidir_PAD[47] bidir_CORE2PAD_PD\[47\] bidir_CORE2PAD_PU\[47\]
++ bidir_CORE2PAD_SL\[47\] VDD VSS bidir_PAD2CORE\[47\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_5_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+Xsram2 A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\] A_all\[6\]
++ A_all\[7\] A_all\[8\] CEN_all clk_PAD2CORE D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_2 Q2\[0\] Q2\[1\] Q2\[2\] Q2\[3\]
++ Q2\[4\] Q2\[5\] Q2\[6\] Q2\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\] WEN_all\[3\]
++ WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] gf180_ram_512x8_wrapper_as2650
+XIO_FILL_IO_EAST_1_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_12_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_2_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvdd_east_2 VDD VSS VSS gf180mcu_ws_io__dvdd
+Xdvss_west_0 VDD VSS VDD gf180mcu_ws_io__dvss
+XIO_FILL_IO_WEST_7_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_15_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_17_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_7_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_8_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xsram3 A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\] A_all\[6\]
++ A_all\[7\] A_all\[8\] CEN_all clk_PAD2CORE D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_3 Q3\[0\] Q3\[1\] Q3\[2\] Q3\[3\]
++ Q3\[4\] Q3\[5\] Q3\[6\] Q3\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\] WEN_all\[3\]
++ WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] gf180_ram_512x8_wrapper_as2650
+XIO_FILL_IO_WEST_12_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[31\].pad bidir_CORE2PAD\[31\] bidir_CORE2PAD_CS\[31\] VDD VSS bidir_CORE2PAD_IE\[31\]
++ bidir_CORE2PAD_OE\[31\] bidir_PAD[31] bidir_CORE2PAD_PD\[31\] bidir_CORE2PAD_PU\[31\]
++ bidir_CORE2PAD_SL\[31\] VDD VSS bidir_PAD2CORE\[31\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_4_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[46\].pad bidir_CORE2PAD\[46\] bidir_CORE2PAD_CS\[46\] VDD VSS bidir_CORE2PAD_IE\[46\]
++ bidir_CORE2PAD_OE\[46\] bidir_PAD[46] bidir_CORE2PAD_PD\[46\] bidir_CORE2PAD_PU\[46\]
++ bidir_CORE2PAD_SL\[46\] VDD VSS bidir_PAD2CORE\[46\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_SOUTH_11_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvdd_east_3 VDD VSS VSS gf180mcu_ws_io__dvdd
+XIO_FILL_IO_EAST_7_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvss_west_1 VDD VSS VDD gf180mcu_ws_io__dvss
+XIO_FILL_IO_EAST_20_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_16_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_16_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_4_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_20_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xsram4 A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\] A_all\[6\]
++ A_all\[7\] A_all\[8\] CEN_all clk_PAD2CORE D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_4 Q4\[0\] Q4\[1\] Q4\[2\] Q4\[3\]
++ Q4\[4\] Q4\[5\] Q4\[6\] Q4\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\] WEN_all\[3\]
++ WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] gf180_ram_512x8_wrapper_as2650
+XIO_FILL_IO_NORTH_13_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_16_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_10_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xtimers VDD VSS bus_addr\[0\] bus_addr\[1\] bus_addr\[2\] bus_addr\[3\] bus_addr\[4\]
++ bus_addr\[5\] bus_cyc bus_we_timers clk_PAD2CORE bus_data_out\[0\] bus_data_out\[1\]
++ bus_data_out\[2\] bus_data_out\[3\] bus_data_out\[4\] bus_data_out\[5\] bus_data_out\[6\]
++ bus_data_out\[7\] bus_data_timers\[0\] bus_data_timers\[1\] bus_data_timers\[2\]
++ bus_data_timers\[3\] bus_data_timers\[4\] bus_data_timers\[5\] bus_data_timers\[6\]
++ bus_data_timers\[7\] irq1 irq2 irq5 pwm0 pwm1 pwm2 reset tmr0_clk tmr0_o tmr1_clk
++ tmr1_o timers
+XIO_FILL_IO_WEST_3_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_6_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[30\].pad bidir_CORE2PAD\[30\] bidir_CORE2PAD_CS\[30\] VDD VSS bidir_CORE2PAD_IE\[30\]
++ bidir_CORE2PAD_OE\[30\] bidir_PAD[30] bidir_CORE2PAD_PD\[30\] bidir_CORE2PAD_PU\[30\]
++ bidir_CORE2PAD_SL\[30\] VDD VSS bidir_PAD2CORE\[30\] gf180mcu_fd_io__bi_24t
+Xbidir\[45\].pad bidir_CORE2PAD\[45\] bidir_CORE2PAD_CS\[45\] VDD VSS bidir_CORE2PAD_IE\[45\]
++ bidir_CORE2PAD_OE\[45\] bidir_PAD[45] bidir_CORE2PAD_PD\[45\] bidir_CORE2PAD_PU\[45\]
++ bidir_CORE2PAD_SL\[45\] VDD VSS bidir_PAD2CORE\[45\] gf180mcu_fd_io__bi_24t
+Xdvss_west_2 VDD VSS VDD gf180mcu_ws_io__dvss
+XIO_FILL_IO_NORTH_15_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_8_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+Xsram5 A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\] A_all\[6\]
++ A_all\[7\] A_all\[8\] CEN_all clk_PAD2CORE D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_5 Q5\[0\] Q5\[1\] Q5\[2\] Q5\[3\]
++ Q5\[4\] Q5\[5\] Q5\[6\] Q5\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\] WEN_all\[3\]
++ WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] gf180_ram_512x8_wrapper_as2650
+XIO_FILL_IO_NORTH_12_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_0_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_1_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_18_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_12_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvss_west_3 VDD VSS VDD gf180mcu_ws_io__dvss
+XIO_FILL_IO_WEST_14_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_2_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[44\].pad bidir_CORE2PAD\[44\] bidir_CORE2PAD_CS\[44\] VDD VSS bidir_CORE2PAD_IE\[44\]
++ bidir_CORE2PAD_OE\[44\] bidir_PAD[44] bidir_CORE2PAD_PD\[44\] bidir_CORE2PAD_PU\[44\]
++ bidir_CORE2PAD_SL\[44\] VDD VSS bidir_PAD2CORE\[44\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_15_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_17_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xsram6 A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\] A_all\[6\]
++ A_all\[7\] A_all\[8\] CEN_all clk_PAD2CORE D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_6 Q6\[0\] Q6\[1\] Q6\[2\] Q6\[3\]
++ Q6\[4\] Q6\[5\] Q6\[6\] Q6\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\] WEN_all\[3\]
++ WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] gf180_ram_512x8_wrapper_as2650
+XIO_FILL_IO_NORTH_7_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_5_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_12_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_4_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_11_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_0_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_16_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_15_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+Xsram7 A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\] A_all\[6\]
++ A_all\[7\] A_all\[8\] CEN_all clk_PAD2CORE D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_7 Q7\[0\] Q7\[1\] Q7\[2\] Q7\[3\]
++ Q7\[4\] Q7\[5\] Q7\[6\] Q7\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\] WEN_all\[3\]
++ WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] gf180_ram_512x8_wrapper_as2650
+XIO_FILL_IO_EAST_5_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_4_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[43\].pad bidir_CORE2PAD\[43\] bidir_CORE2PAD_CS\[43\] VDD VSS bidir_CORE2PAD_IE\[43\]
++ bidir_CORE2PAD_OE\[43\] bidir_PAD[43] bidir_CORE2PAD_PD\[43\] bidir_CORE2PAD_PU\[43\]
++ bidir_CORE2PAD_SL\[43\] VDD VSS bidir_PAD2CORE\[43\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_12_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_13_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_12_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_10_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_7_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_13_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_15_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_19_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_16_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_19_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_0_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_1_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvdd_west_0 VDD VSS VSS gf180mcu_ws_io__dvdd
+XIO_FILL_IO_WEST_13_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[42\].pad bidir_CORE2PAD\[42\] bidir_CORE2PAD_CS\[42\] VDD VSS bidir_CORE2PAD_IE\[42\]
++ bidir_CORE2PAD_OE\[42\] bidir_PAD[42] bidir_CORE2PAD_PD\[42\] bidir_CORE2PAD_PU\[42\]
++ bidir_CORE2PAD_SL\[42\] VDD VSS bidir_PAD2CORE\[42\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_13_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_12_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_CORNER_NORTH_EAST_INST VDD VSS VDD VSS gf180mcu_fd_io__cor
+XIO_FILL_IO_SOUTH_0_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_2_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_17_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_7_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_13_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_5_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_12_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvdd_west_1 VDD VSS VSS gf180mcu_ws_io__dvdd
+XIO_FILL_IO_WEST_7_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_4_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[41\].pad bidir_CORE2PAD\[41\] bidir_CORE2PAD_CS\[41\] VDD VSS bidir_CORE2PAD_IE\[41\]
++ bidir_CORE2PAD_OE\[41\] bidir_PAD[41] bidir_CORE2PAD_PD\[41\] bidir_CORE2PAD_PU\[41\]
++ bidir_CORE2PAD_SL\[41\] VDD VSS bidir_PAD2CORE\[41\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_18_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_16_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_7_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_5_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_4_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_13_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_12_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_1_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+Xdvdd_west_2 VDD VSS VSS gf180mcu_ws_io__dvdd
+XIO_FILL_IO_WEST_10_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_10_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_1370 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_7_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_20_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[40\].pad bidir_CORE2PAD\[40\] bidir_CORE2PAD_CS\[40\] VDD VSS bidir_CORE2PAD_IE\[40\]
++ bidir_CORE2PAD_OE\[40\] bidir_PAD[40] bidir_CORE2PAD_PD\[40\] bidir_CORE2PAD_PU\[40\]
++ bidir_CORE2PAD_SL\[40\] VDD VSS bidir_PAD2CORE\[40\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_3_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+Xdvdd_west_3 VDD VSS VSS gf180mcu_ws_io__dvdd
+XIO_FILL_IO_SOUTH_6_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xunused VDD VSS clk_PAD2CORE bidir_CORE2PAD_CS\[38\] bidir_CORE2PAD_CS\[48\] bidir_CORE2PAD_CS\[49\]
++ bidir_CORE2PAD_CS\[50\] bidir_CORE2PAD_CS\[51\] bidir_CORE2PAD_CS\[52\] bidir_CORE2PAD_CS\[53\]
++ bidir_CORE2PAD_CS\[39\] bidir_CORE2PAD_CS\[40\] bidir_CORE2PAD_CS\[41\] bidir_CORE2PAD_CS\[42\]
++ bidir_CORE2PAD_CS\[43\] bidir_CORE2PAD_CS\[44\] bidir_CORE2PAD_CS\[45\] bidir_CORE2PAD_CS\[46\]
++ bidir_CORE2PAD_CS\[47\] bidir_CORE2PAD_IE\[38\] bidir_CORE2PAD_IE\[48\] bidir_CORE2PAD_IE\[49\]
++ bidir_CORE2PAD_IE\[50\] bidir_CORE2PAD_IE\[51\] bidir_CORE2PAD_IE\[52\] bidir_CORE2PAD_IE\[53\]
++ bidir_CORE2PAD_IE\[39\] bidir_CORE2PAD_IE\[40\] bidir_CORE2PAD_IE\[41\] bidir_CORE2PAD_IE\[42\]
++ bidir_CORE2PAD_IE\[43\] bidir_CORE2PAD_IE\[44\] bidir_CORE2PAD_IE\[45\] bidir_CORE2PAD_IE\[46\]
++ bidir_CORE2PAD_IE\[47\] bidir_PAD2CORE\[38\] bidir_PAD2CORE\[48\] bidir_PAD2CORE\[49\]
++ bidir_PAD2CORE\[50\] bidir_PAD2CORE\[51\] bidir_PAD2CORE\[52\] bidir_PAD2CORE\[53\]
++ bidir_PAD2CORE\[39\] bidir_PAD2CORE\[40\] bidir_PAD2CORE\[41\] bidir_PAD2CORE\[42\]
++ bidir_PAD2CORE\[43\] bidir_PAD2CORE\[44\] bidir_PAD2CORE\[45\] bidir_PAD2CORE\[46\]
++ bidir_PAD2CORE\[47\] bidir_CORE2PAD_OE\[38\] bidir_CORE2PAD_OE\[48\] bidir_CORE2PAD_OE\[49\]
++ bidir_CORE2PAD_OE\[50\] bidir_CORE2PAD_OE\[51\] bidir_CORE2PAD_OE\[52\] bidir_CORE2PAD_OE\[53\]
++ bidir_CORE2PAD_OE\[39\] bidir_CORE2PAD_OE\[40\] bidir_CORE2PAD_OE\[41\] bidir_CORE2PAD_OE\[42\]
++ bidir_CORE2PAD_OE\[43\] bidir_CORE2PAD_OE\[44\] bidir_CORE2PAD_OE\[45\] bidir_CORE2PAD_OE\[46\]
++ bidir_CORE2PAD_OE\[47\] bidir_CORE2PAD\[38\] bidir_CORE2PAD\[48\] bidir_CORE2PAD\[49\]
++ bidir_CORE2PAD\[50\] bidir_CORE2PAD\[51\] bidir_CORE2PAD\[52\] bidir_CORE2PAD\[53\]
++ bidir_CORE2PAD\[39\] bidir_CORE2PAD\[40\] bidir_CORE2PAD\[41\] bidir_CORE2PAD\[42\]
++ bidir_CORE2PAD\[43\] bidir_CORE2PAD\[44\] bidir_CORE2PAD\[45\] bidir_CORE2PAD\[46\]
++ bidir_CORE2PAD\[47\] bidir_CORE2PAD_PD\[38\] bidir_CORE2PAD_PD\[48\] bidir_CORE2PAD_PD\[49\]
++ bidir_CORE2PAD_PD\[50\] bidir_CORE2PAD_PD\[51\] bidir_CORE2PAD_PD\[52\] bidir_CORE2PAD_PD\[53\]
++ bidir_CORE2PAD_PD\[39\] bidir_CORE2PAD_PD\[40\] bidir_CORE2PAD_PD\[41\] bidir_CORE2PAD_PD\[42\]
++ bidir_CORE2PAD_PD\[43\] bidir_CORE2PAD_PD\[44\] bidir_CORE2PAD_PD\[45\] bidir_CORE2PAD_PD\[46\]
++ bidir_CORE2PAD_PD\[47\] bidir_CORE2PAD_PU\[38\] bidir_CORE2PAD_PU\[48\] bidir_CORE2PAD_PU\[49\]
++ bidir_CORE2PAD_PU\[50\] bidir_CORE2PAD_PU\[51\] bidir_CORE2PAD_PU\[52\] bidir_CORE2PAD_PU\[53\]
++ bidir_CORE2PAD_PU\[39\] bidir_CORE2PAD_PU\[40\] bidir_CORE2PAD_PU\[41\] bidir_CORE2PAD_PU\[42\]
++ bidir_CORE2PAD_PU\[43\] bidir_CORE2PAD_PU\[44\] bidir_CORE2PAD_PU\[45\] bidir_CORE2PAD_PU\[46\]
++ bidir_CORE2PAD_PU\[47\] bidir_CORE2PAD_SL\[38\] bidir_CORE2PAD_SL\[48\] bidir_CORE2PAD_SL\[49\]
++ bidir_CORE2PAD_SL\[50\] bidir_CORE2PAD_SL\[51\] bidir_CORE2PAD_SL\[52\] bidir_CORE2PAD_SL\[53\]
++ bidir_CORE2PAD_SL\[39\] bidir_CORE2PAD_SL\[40\] bidir_CORE2PAD_SL\[41\] bidir_CORE2PAD_SL\[42\]
++ bidir_CORE2PAD_SL\[43\] bidir_CORE2PAD_SL\[44\] bidir_CORE2PAD_SL\[45\] bidir_CORE2PAD_SL\[46\]
++ bidir_CORE2PAD_SL\[47\] reset unused
+XIO_FILL_IO_WEST_13_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_1360 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_3_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_8_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_CORNER_SOUTH_EAST_INST VDD VSS VDD VSS gf180mcu_fd_io__cor
+Xsid DAC_clk DAC_d1 DAC_d2 DAC_le VDD VSS bus_addr\[0\] bus_addr\[1\] bus_addr\[2\]
++ bus_addr\[3\] bus_addr\[4\] bus_addr\[5\] bus_cyc bus_data_out\[0\] bus_data_out\[1\]
++ bus_data_out\[2\] bus_data_out\[3\] bus_data_out\[4\] bus_data_out\[5\] bus_data_out\[6\]
++ bus_data_out\[7\] bus_data_sid\[0\] bus_data_sid\[1\] bus_data_sid\[2\] bus_data_sid\[3\]
++ bus_data_sid\[4\] bus_data_sid\[5\] bus_data_sid\[6\] bus_data_sid\[7\] bus_we_sid
++ clk_PAD2CORE reset sid
+XIO_FILL_IO_SOUTH_0_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_2_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_7_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_3_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_2_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_CORNER_NORTH_WEST_INST VDD VSS VDD VSS gf180mcu_fd_io__cor
+XIO_FILL_IO_EAST_10_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_8_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_15_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_16_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_5_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_13_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[53\].pad bidir_CORE2PAD\[53\] bidir_CORE2PAD_CS\[53\] VDD VSS bidir_CORE2PAD_IE\[53\]
++ bidir_CORE2PAD_OE\[53\] bidir_PAD[53] bidir_CORE2PAD_PD\[53\] bidir_CORE2PAD_PU\[53\]
++ bidir_CORE2PAD_SL\[53\] VDD VSS bidir_PAD2CORE\[53\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_9_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_1070 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_NORTH_10_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_19_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_11_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_7_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_1370 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_6_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_1_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_15_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_1071 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_NORTH_17_1060 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_15_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[52\].pad bidir_CORE2PAD\[52\] bidir_CORE2PAD_CS\[52\] VDD VSS bidir_CORE2PAD_IE\[52\]
++ bidir_CORE2PAD_OE\[52\] bidir_PAD[52] bidir_CORE2PAD_PD\[52\] bidir_CORE2PAD_PU\[52\]
++ bidir_CORE2PAD_SL\[52\] VDD VSS bidir_PAD2CORE\[52\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_2_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_20_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_5_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[9\].pad bidir_CORE2PAD\[9\] bidir_CORE2PAD_CS\[9\] VDD VSS bidir_CORE2PAD_IE\[9\]
++ bidir_CORE2PAD_OE\[9\] bidir_PAD[9] bidir_CORE2PAD_PD\[9\] bidir_CORE2PAD_PU\[9\]
++ bidir_CORE2PAD_SL\[9\] VDD VSS bidir_PAD2CORE\[9\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_1_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_6_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_1360 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_5_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_1072 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_NORTH_17_1050 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_7_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_7_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_6_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_CORNER_SOUTH_WEST_INST VDD VSS VDD VSS gf180mcu_fd_io__cor
+XIO_FILL_IO_SOUTH_17_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[51\].pad bidir_CORE2PAD\[51\] bidir_CORE2PAD_CS\[51\] VDD VSS bidir_CORE2PAD_IE\[51\]
++ bidir_CORE2PAD_OE\[51\] bidir_PAD[51] bidir_CORE2PAD_PD\[51\] bidir_CORE2PAD_PU\[51\]
++ bidir_CORE2PAD_SL\[51\] VDD VSS bidir_PAD2CORE\[51\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_SOUTH_1_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_19_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[19\].pad bidir_CORE2PAD\[19\] bidir_CORE2PAD_CS\[19\] VDD VSS bidir_CORE2PAD_IE\[19\]
++ bidir_CORE2PAD_OE\[19\] bidir_PAD[19] bidir_CORE2PAD_PD\[19\] bidir_CORE2PAD_PU\[19\]
++ bidir_CORE2PAD_SL\[19\] VDD VSS bidir_PAD2CORE\[19\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_0_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xgpios DAC_clk DAC_d1 DAC_d2 DAC_le RXD TXD VDD VSS bus_addr\[0\] bus_addr\[1\] bus_addr\[2\]
++ bus_addr\[3\] bus_cyc bus_we_gpios clk_PAD2CORE bus_data_out\[0\] bus_data_out\[1\]
++ bus_data_out\[2\] bus_data_out\[3\] bus_data_out\[4\] bus_data_out\[5\] bus_data_out\[6\]
++ bus_data_out\[7\] bus_data_gpios\[0\] bus_data_gpios\[1\] bus_data_gpios\[2\] bus_data_gpios\[3\]
++ bus_data_gpios\[4\] bus_data_gpios\[5\] bus_data_gpios\[6\] bus_data_gpios\[7\]
++ bidir_CORE2PAD_CS\[19\] bidir_CORE2PAD_CS\[29\] bidir_CORE2PAD_CS\[30\] bidir_CORE2PAD_CS\[31\]
++ bidir_CORE2PAD_CS\[32\] bidir_CORE2PAD_CS\[33\] bidir_CORE2PAD_CS\[34\] bidir_CORE2PAD_CS\[20\]
++ bidir_CORE2PAD_CS\[21\] bidir_CORE2PAD_CS\[22\] bidir_CORE2PAD_CS\[23\] bidir_CORE2PAD_CS\[24\]
++ bidir_CORE2PAD_CS\[25\] bidir_CORE2PAD_CS\[26\] bidir_CORE2PAD_CS\[27\] bidir_CORE2PAD_CS\[28\]
++ bidir_CORE2PAD_IE\[19\] bidir_CORE2PAD_IE\[29\] bidir_CORE2PAD_IE\[30\] bidir_CORE2PAD_IE\[31\]
++ bidir_CORE2PAD_IE\[32\] bidir_CORE2PAD_IE\[33\] bidir_CORE2PAD_IE\[34\] bidir_CORE2PAD_IE\[20\]
++ bidir_CORE2PAD_IE\[21\] bidir_CORE2PAD_IE\[22\] bidir_CORE2PAD_IE\[23\] bidir_CORE2PAD_IE\[24\]
++ bidir_CORE2PAD_IE\[25\] bidir_CORE2PAD_IE\[26\] bidir_CORE2PAD_IE\[27\] bidir_CORE2PAD_IE\[28\]
++ bidir_PAD2CORE\[19\] bidir_PAD2CORE\[29\] bidir_PAD2CORE\[30\] bidir_PAD2CORE\[31\]
++ bidir_PAD2CORE\[32\] bidir_PAD2CORE\[33\] bidir_PAD2CORE\[34\] bidir_PAD2CORE\[20\]
++ bidir_PAD2CORE\[21\] bidir_PAD2CORE\[22\] bidir_PAD2CORE\[23\] bidir_PAD2CORE\[24\]
++ bidir_PAD2CORE\[25\] bidir_PAD2CORE\[26\] bidir_PAD2CORE\[27\] bidir_PAD2CORE\[28\]
++ bidir_CORE2PAD_OE\[19\] bidir_CORE2PAD_OE\[29\] bidir_CORE2PAD_OE\[30\] bidir_CORE2PAD_OE\[31\]
++ bidir_CORE2PAD_OE\[32\] bidir_CORE2PAD_OE\[33\] bidir_CORE2PAD_OE\[34\] bidir_CORE2PAD_OE\[20\]
++ bidir_CORE2PAD_OE\[21\] bidir_CORE2PAD_OE\[22\] bidir_CORE2PAD_OE\[23\] bidir_CORE2PAD_OE\[24\]
++ bidir_CORE2PAD_OE\[25\] bidir_CORE2PAD_OE\[26\] bidir_CORE2PAD_OE\[27\] bidir_CORE2PAD_OE\[28\]
++ bidir_CORE2PAD\[19\] bidir_CORE2PAD\[29\] bidir_CORE2PAD\[30\] bidir_CORE2PAD\[31\]
++ bidir_CORE2PAD\[32\] bidir_CORE2PAD\[33\] bidir_CORE2PAD\[34\] bidir_CORE2PAD\[20\]
++ bidir_CORE2PAD\[21\] bidir_CORE2PAD\[22\] bidir_CORE2PAD\[23\] bidir_CORE2PAD\[24\]
++ bidir_CORE2PAD\[25\] bidir_CORE2PAD\[26\] bidir_CORE2PAD\[27\] bidir_CORE2PAD\[28\]
++ bidir_CORE2PAD_PD\[19\] bidir_CORE2PAD_PD\[29\] bidir_CORE2PAD_PD\[30\] bidir_CORE2PAD_PD\[31\]
++ bidir_CORE2PAD_PD\[32\] bidir_CORE2PAD_PD\[33\] bidir_CORE2PAD_PD\[34\] bidir_CORE2PAD_PD\[20\]
++ bidir_CORE2PAD_PD\[21\] bidir_CORE2PAD_PD\[22\] bidir_CORE2PAD_PD\[23\] bidir_CORE2PAD_PD\[24\]
++ bidir_CORE2PAD_PD\[25\] bidir_CORE2PAD_PD\[26\] bidir_CORE2PAD_PD\[27\] bidir_CORE2PAD_PD\[28\]
++ bidir_CORE2PAD_PU\[19\] bidir_CORE2PAD_PU\[29\] bidir_CORE2PAD_PU\[30\] bidir_CORE2PAD_PU\[31\]
++ bidir_CORE2PAD_PU\[32\] bidir_CORE2PAD_PU\[33\] bidir_CORE2PAD_PU\[34\] bidir_CORE2PAD_PU\[20\]
++ bidir_CORE2PAD_PU\[21\] bidir_CORE2PAD_PU\[22\] bidir_CORE2PAD_PU\[23\] bidir_CORE2PAD_PU\[24\]
++ bidir_CORE2PAD_PU\[25\] bidir_CORE2PAD_PU\[26\] bidir_CORE2PAD_PU\[27\] bidir_CORE2PAD_PU\[28\]
++ bidir_CORE2PAD_SL\[19\] bidir_CORE2PAD_SL\[29\] bidir_CORE2PAD_SL\[30\] bidir_CORE2PAD_SL\[31\]
++ bidir_CORE2PAD_SL\[32\] bidir_CORE2PAD_SL\[33\] bidir_CORE2PAD_SL\[34\] bidir_CORE2PAD_SL\[20\]
++ bidir_CORE2PAD_SL\[21\] bidir_CORE2PAD_SL\[22\] bidir_CORE2PAD_SL\[23\] bidir_CORE2PAD_SL\[24\]
++ bidir_CORE2PAD_SL\[25\] bidir_CORE2PAD_SL\[26\] bidir_CORE2PAD_SL\[27\] bidir_CORE2PAD_SL\[28\]
++ irq0 irq6 irq7 pwm0 pwm1 pwm2 reset tmr0_clk tmr0_o tmr1_clk tmr1_o gpios
+XIO_FILL_IO_WEST_12_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_16_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_12_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_4_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+Xbidir\[8\].pad bidir_CORE2PAD\[8\] bidir_CORE2PAD_CS\[8\] VDD VSS bidir_CORE2PAD_IE\[8\]
++ bidir_CORE2PAD_OE\[8\] bidir_PAD[8] bidir_CORE2PAD_PD\[8\] bidir_CORE2PAD_PU\[8\]
++ bidir_CORE2PAD_SL\[8\] VDD VSS bidir_PAD2CORE\[8\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_5_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_17_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_1073 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_NORTH_1_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_9_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_4_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[50\].pad bidir_CORE2PAD\[50\] bidir_CORE2PAD_CS\[50\] VDD VSS bidir_CORE2PAD_IE\[50\]
++ bidir_CORE2PAD_OE\[50\] bidir_PAD[50] bidir_CORE2PAD_PD\[50\] bidir_CORE2PAD_PU\[50\]
++ bidir_CORE2PAD_SL\[50\] VDD VSS bidir_PAD2CORE\[50\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_SOUTH_1_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[18\].pad bidir_CORE2PAD\[18\] bidir_CORE2PAD_CS\[18\] VDD VSS bidir_CORE2PAD_IE\[18\]
++ bidir_CORE2PAD_OE\[18\] bidir_PAD[18] bidir_CORE2PAD_PD\[18\] bidir_CORE2PAD_PU\[18\]
++ bidir_CORE2PAD_SL\[18\] VDD VSS bidir_PAD2CORE\[18\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_SOUTH_9_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_10_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xserial_ports RXD TXD VDD VSS bus_addr\[0\] bus_addr\[1\] bus_addr\[2\] bus_cyc bus_we_serial_ports
++ clk_PAD2CORE bus_data_out\[0\] bus_data_out\[1\] bus_data_out\[2\] bus_data_out\[3\]
++ bus_data_out\[4\] bus_data_out\[5\] bus_data_out\[6\] bus_data_out\[7\] bus_data_serial_ports\[0\]
++ bus_data_serial_ports\[1\] bus_data_serial_ports\[2\] bus_data_serial_ports\[3\]
++ bus_data_serial_ports\[4\] bus_data_serial_ports\[5\] bus_data_serial_ports\[6\]
++ bus_data_serial_ports\[7\] bidir_CORE2PAD_CS\[35\] bidir_CORE2PAD_CS\[36\] bidir_CORE2PAD_CS\[37\]
++ bidir_CORE2PAD_IE\[35\] bidir_CORE2PAD_IE\[36\] bidir_CORE2PAD_IE\[37\] bidir_PAD2CORE\[37\]
++ bidir_CORE2PAD_OE\[35\] bidir_CORE2PAD_OE\[36\] bidir_CORE2PAD_OE\[37\] bidir_CORE2PAD\[35\]
++ bidir_CORE2PAD\[36\] bidir_CORE2PAD\[37\] bidir_CORE2PAD_PD\[35\] bidir_CORE2PAD_PD\[36\]
++ bidir_CORE2PAD_PD\[37\] bidir_CORE2PAD_PU\[35\] bidir_CORE2PAD_PU\[36\] bidir_CORE2PAD_PU\[37\]
++ bidir_CORE2PAD_SL\[35\] bidir_CORE2PAD_SL\[36\] bidir_CORE2PAD_SL\[37\] irq3 reset
++ serial_ports
+XIO_FILL_IO_EAST_5_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_3_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_1074 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_NORTH_2_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_20_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+Xbidir\[7\].pad bidir_CORE2PAD\[7\] bidir_CORE2PAD_CS\[7\] VDD VSS bidir_CORE2PAD_IE\[7\]
++ bidir_CORE2PAD_OE\[7\] bidir_PAD[7] bidir_CORE2PAD_PD\[7\] bidir_CORE2PAD_PU\[7\]
++ bidir_CORE2PAD_SL\[7\] VDD VSS bidir_PAD2CORE\[7\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_1_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_6_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_15_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_4_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_1_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[17\].pad bidir_CORE2PAD\[17\] bidir_CORE2PAD_CS\[17\] VDD VSS bidir_CORE2PAD_IE\[17\]
++ bidir_CORE2PAD_OE\[17\] bidir_PAD[17] bidir_CORE2PAD_PD\[17\] bidir_CORE2PAD_PU\[17\]
++ bidir_CORE2PAD_SL\[17\] VDD VSS bidir_PAD2CORE\[17\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_20_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_4_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_12_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_2_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_4_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_3_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[6\].pad bidir_CORE2PAD\[6\] bidir_CORE2PAD_CS\[6\] VDD VSS bidir_CORE2PAD_IE\[6\]
++ bidir_CORE2PAD_OE\[6\] bidir_PAD[6] bidir_CORE2PAD_PD\[6\] bidir_CORE2PAD_PU\[6\]
++ bidir_CORE2PAD_SL\[6\] VDD VSS bidir_PAD2CORE\[6\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_18_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_17_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_14_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_7_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_12_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_17_1070 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_WEST_12_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_4_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_7_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[16\].pad bidir_CORE2PAD\[16\] bidir_CORE2PAD_CS\[16\] VDD VSS bidir_CORE2PAD_IE\[16\]
++ bidir_CORE2PAD_OE\[16\] bidir_PAD[16] bidir_CORE2PAD_PD\[16\] bidir_CORE2PAD_PU\[16\]
++ bidir_CORE2PAD_SL\[16\] VDD VSS bidir_PAD2CORE\[16\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_1_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_0_1070 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_SOUTH_4_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[5\].pad bidir_CORE2PAD\[5\] bidir_CORE2PAD_CS\[5\] VDD VSS bidir_CORE2PAD_IE\[5\]
++ bidir_CORE2PAD_OE\[5\] bidir_PAD[5] bidir_CORE2PAD_PD\[5\] bidir_CORE2PAD_PU\[5\]
++ bidir_CORE2PAD_SL\[5\] VDD VSS bidir_PAD2CORE\[5\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_13_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_11_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_17_1060 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_17_1071 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_EAST_2_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_10_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_17_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xram_controller A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\]
++ A_all\[6\] A_all\[7\] A_all\[8\] CEN_all D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_0 GWEN_1 GWEN_2 GWEN_3 GWEN_4 GWEN_5
++ GWEN_6 GWEN_7 Q0\[0\] Q0\[1\] Q0\[2\] Q0\[3\] Q0\[4\] Q0\[5\] Q0\[6\] Q0\[7\] Q1\[0\]
++ Q1\[1\] Q1\[2\] Q1\[3\] Q1\[4\] Q1\[5\] Q1\[6\] Q1\[7\] Q2\[0\] Q2\[1\] Q2\[2\]
++ Q2\[3\] Q2\[4\] Q2\[5\] Q2\[6\] Q2\[7\] Q3\[0\] Q3\[1\] Q3\[2\] Q3\[3\] Q3\[4\]
++ Q3\[5\] Q3\[6\] Q3\[7\] Q4\[0\] Q4\[1\] Q4\[2\] Q4\[3\] Q4\[4\] Q4\[5\] Q4\[6\]
++ Q4\[7\] Q5\[0\] Q5\[1\] Q5\[2\] Q5\[3\] Q5\[4\] Q5\[5\] Q5\[6\] Q5\[7\] Q6\[0\]
++ Q6\[1\] Q6\[2\] Q6\[3\] Q6\[4\] Q6\[5\] Q6\[6\] Q6\[7\] Q7\[0\] Q7\[1\] Q7\[2\]
++ Q7\[3\] Q7\[4\] Q7\[5\] Q7\[6\] Q7\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\]
++ WEN_all\[3\] WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] WEb_ram rom_bus_out\[0\]
++ rom_bus_out\[1\] rom_bus_out\[2\] rom_bus_out\[3\] rom_bus_out\[4\] rom_bus_out\[5\]
++ rom_bus_out\[6\] rom_bus_out\[7\] ram_bus_in\[0\] ram_bus_in\[1\] ram_bus_in\[2\]
++ ram_bus_in\[3\] ram_bus_in\[4\] ram_bus_in\[5\] ram_bus_in\[6\] ram_bus_in\[7\]
++ clk_PAD2CORE ram_enabled requested_addr\[0\] requested_addr\[10\] requested_addr\[11\]
++ requested_addr\[12\] requested_addr\[13\] requested_addr\[14\] requested_addr\[15\]
++ requested_addr\[1\] requested_addr\[2\] requested_addr\[3\] requested_addr\[4\]
++ requested_addr\[5\] requested_addr\[6\] requested_addr\[7\] requested_addr\[8\]
++ requested_addr\[9\] reset ram_controller
+XIO_FILL_IO_WEST_20_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_6_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_15_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_4_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_1060 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_0_1071 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_SOUTH_10_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[15\].pad bidir_CORE2PAD\[15\] bidir_CORE2PAD_CS\[15\] VDD VSS bidir_CORE2PAD_IE\[15\]
++ bidir_CORE2PAD_OE\[15\] bidir_PAD[15] bidir_CORE2PAD_PD\[15\] bidir_CORE2PAD_PU\[15\]
++ bidir_CORE2PAD_SL\[15\] VDD VSS bidir_PAD2CORE\[15\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_12_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_7_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_17_1050 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_17_1072 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_EAST_1_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_1_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[4\].pad bidir_CORE2PAD\[4\] bidir_CORE2PAD_CS\[4\] VDD VSS bidir_CORE2PAD_IE\[4\]
++ bidir_CORE2PAD_OE\[4\] bidir_PAD[4] bidir_CORE2PAD_PD\[4\] bidir_CORE2PAD_PU\[4\]
++ bidir_CORE2PAD_SL\[4\] VDD VSS bidir_PAD2CORE\[4\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_SOUTH_15_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xrst_n_pad VDD VSS rst_n_PAD const_zero\[1\] const_zero\[0\] VDD VSS rst_n_PAD2CORE
++ gf180mcu_fd_io__in_c
+XIO_FILL_IO_NORTH_17_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_5_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_17_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_17_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_2_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_1050 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_0_1072 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_WEST_15_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_17_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_7_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_5_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_17_1073 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+Xbidir\[29\].pad bidir_CORE2PAD\[29\] bidir_CORE2PAD_CS\[29\] VDD VSS bidir_CORE2PAD_IE\[29\]
++ bidir_CORE2PAD_OE\[29\] bidir_PAD[29] bidir_CORE2PAD_PD\[29\] bidir_CORE2PAD_PU\[29\]
++ bidir_CORE2PAD_SL\[29\] VDD VSS bidir_PAD2CORE\[29\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_12_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[14\].pad bidir_CORE2PAD\[14\] bidir_CORE2PAD_CS\[14\] VDD VSS bidir_CORE2PAD_IE\[14\]
++ bidir_CORE2PAD_OE\[14\] bidir_PAD[14] bidir_CORE2PAD_PD\[14\] bidir_CORE2PAD_PU\[14\]
++ bidir_CORE2PAD_SL\[14\] VDD VSS bidir_PAD2CORE\[14\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_20_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_4_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[3\].pad bidir_CORE2PAD\[3\] bidir_CORE2PAD_CS\[3\] VDD VSS bidir_CORE2PAD_IE\[3\]
++ bidir_CORE2PAD_OE\[3\] bidir_PAD[3] bidir_CORE2PAD_PD\[3\] bidir_CORE2PAD_PU\[3\]
++ bidir_CORE2PAD_SL\[3\] VDD VSS bidir_PAD2CORE\[3\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_17_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_7_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_1073 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_WEST_1_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_16_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvss_south_0 VDD VSS VDD gf180mcu_fd_io__dvss
+XIO_FILL_IO_EAST_5_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_4_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_17_1074 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_NORTH_13_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_15_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[13\].pad bidir_CORE2PAD\[13\] bidir_CORE2PAD_CS\[13\] VDD VSS bidir_CORE2PAD_IE\[13\]
++ bidir_CORE2PAD_OE\[13\] bidir_PAD[13] bidir_CORE2PAD_PD\[13\] bidir_CORE2PAD_PU\[13\]
++ bidir_CORE2PAD_SL\[13\] VDD VSS bidir_PAD2CORE\[13\] gf180mcu_fd_io__bi_24t
+Xbidir\[28\].pad bidir_CORE2PAD\[28\] bidir_CORE2PAD_CS\[28\] VDD VSS bidir_CORE2PAD_IE\[28\]
++ bidir_CORE2PAD_OE\[28\] bidir_PAD[28] bidir_CORE2PAD_PD\[28\] bidir_CORE2PAD_PU\[28\]
++ bidir_CORE2PAD_SL\[28\] VDD VSS bidir_PAD2CORE\[28\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_10_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_6_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[2\].pad bidir_CORE2PAD\[2\] bidir_CORE2PAD_CS\[2\] VDD VSS bidir_CORE2PAD_IE\[2\]
++ bidir_CORE2PAD_OE\[2\] bidir_PAD[2] bidir_CORE2PAD_PD\[2\] bidir_CORE2PAD_PU\[2\]
++ bidir_CORE2PAD_SL\[2\] VDD VSS bidir_PAD2CORE\[2\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_3_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_15_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_1074 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_WEST_16_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_4_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_0_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_1_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_5_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[27\].pad bidir_CORE2PAD\[27\] bidir_CORE2PAD_CS\[27\] VDD VSS bidir_CORE2PAD_IE\[27\]
++ bidir_CORE2PAD_OE\[27\] bidir_PAD[27] bidir_CORE2PAD_PD\[27\] bidir_CORE2PAD_PU\[27\]
++ bidir_CORE2PAD_SL\[27\] VDD VSS bidir_PAD2CORE\[27\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_8_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+Xbidir\[12\].pad bidir_CORE2PAD\[12\] bidir_CORE2PAD_CS\[12\] VDD VSS bidir_CORE2PAD_IE\[12\]
++ bidir_CORE2PAD_OE\[12\] bidir_PAD[12] bidir_CORE2PAD_PD\[12\] bidir_CORE2PAD_PU\[12\]
++ bidir_CORE2PAD_SL\[12\] VDD VSS bidir_PAD2CORE\[12\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_SOUTH_0_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_2_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[1\].pad bidir_CORE2PAD\[1\] bidir_CORE2PAD_CS\[1\] VDD VSS bidir_CORE2PAD_IE\[1\]
++ bidir_CORE2PAD_OE\[1\] bidir_PAD[1] bidir_CORE2PAD_PD\[1\] bidir_CORE2PAD_PU\[1\]
++ bidir_CORE2PAD_SL\[1\] VDD VSS bidir_PAD2CORE\[1\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_SOUTH_17_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_7_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_5_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_12_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_1_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_4_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[26\].pad bidir_CORE2PAD\[26\] bidir_CORE2PAD_CS\[26\] VDD VSS bidir_CORE2PAD_IE\[26\]
++ bidir_CORE2PAD_OE\[26\] bidir_PAD[26] bidir_CORE2PAD_PD\[26\] bidir_CORE2PAD_PU\[26\]
++ bidir_CORE2PAD_SL\[26\] VDD VSS bidir_PAD2CORE\[26\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_16_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[11\].pad bidir_CORE2PAD\[11\] bidir_CORE2PAD_CS\[11\] VDD VSS bidir_CORE2PAD_IE\[11\]
++ bidir_CORE2PAD_OE\[11\] bidir_PAD[11] bidir_CORE2PAD_PD\[11\] bidir_CORE2PAD_PU\[11\]
++ bidir_CORE2PAD_SL\[11\] VDD VSS bidir_PAD2CORE\[11\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_SOUTH_17_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_10_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_5_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_4_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_13_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[0\].pad bidir_CORE2PAD\[0\] bidir_CORE2PAD_CS\[0\] VDD VSS bidir_CORE2PAD_IE\[0\]
++ bidir_CORE2PAD_OE\[0\] bidir_PAD[0] bidir_CORE2PAD_PD\[0\] bidir_CORE2PAD_PU\[0\]
++ bidir_CORE2PAD_SL\[0\] VDD VSS bidir_PAD2CORE\[0\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_6_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvss_north_0 VDD VSS VDD gf180mcu_fd_io__dvss
+XIO_FILL_IO_WEST_11_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_2_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_13_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_10_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_20_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_18_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_15_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_4_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xclk_pad VDD VSS clk_PAD const_zero\[3\] const_zero\[2\] VDD VSS clk_PAD2CORE gf180mcu_fd_io__in_s
+XIO_FILL_IO_WEST_16_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[25\].pad bidir_CORE2PAD\[25\] bidir_CORE2PAD_CS\[25\] VDD VSS bidir_CORE2PAD_IE\[25\]
++ bidir_CORE2PAD_OE\[25\] bidir_PAD[25] bidir_CORE2PAD_PD\[25\] bidir_CORE2PAD_PU\[25\]
++ bidir_CORE2PAD_SL\[25\] VDD VSS bidir_PAD2CORE\[25\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_10_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[10\].pad bidir_CORE2PAD\[10\] bidir_CORE2PAD_CS\[10\] VDD VSS bidir_CORE2PAD_IE\[10\]
++ bidir_CORE2PAD_OE\[10\] bidir_PAD[10] bidir_CORE2PAD_PD\[10\] bidir_CORE2PAD_PU\[10\]
++ bidir_CORE2PAD_SL\[10\] VDD VSS bidir_PAD2CORE\[10\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_8_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_12_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_13_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_2_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_17_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_17_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_7_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_5_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[24\].pad bidir_CORE2PAD\[24\] bidir_CORE2PAD_CS\[24\] VDD VSS bidir_CORE2PAD_IE\[24\]
++ bidir_CORE2PAD_OE\[24\] bidir_PAD[24] bidir_CORE2PAD_PD\[24\] bidir_CORE2PAD_PU\[24\]
++ bidir_CORE2PAD_SL\[24\] VDD VSS bidir_PAD2CORE\[24\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_12_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[39\].pad bidir_CORE2PAD\[39\] bidir_CORE2PAD_CS\[39\] VDD VSS bidir_CORE2PAD_IE\[39\]
++ bidir_CORE2PAD_OE\[39\] bidir_PAD[39] bidir_CORE2PAD_PD\[39\] bidir_CORE2PAD_PU\[39\]
++ bidir_CORE2PAD_SL\[39\] VDD VSS bidir_PAD2CORE\[39\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_3_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_13_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_11_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_16_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_5_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_11_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_13_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_17_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[38\].pad bidir_CORE2PAD\[38\] bidir_CORE2PAD_CS\[38\] VDD VSS bidir_CORE2PAD_IE\[38\]
++ bidir_CORE2PAD_OE\[38\] bidir_PAD[38] bidir_CORE2PAD_PD\[38\] bidir_CORE2PAD_PU\[38\]
++ bidir_CORE2PAD_SL\[38\] VDD VSS bidir_PAD2CORE\[38\] gf180mcu_fd_io__bi_24t
+Xbidir\[23\].pad bidir_CORE2PAD\[23\] bidir_CORE2PAD_CS\[23\] VDD VSS bidir_CORE2PAD_IE\[23\]
++ bidir_CORE2PAD_OE\[23\] bidir_PAD[23] bidir_CORE2PAD_PD\[23\] bidir_CORE2PAD_PU\[23\]
++ bidir_CORE2PAD_SL\[23\] VDD VSS bidir_PAD2CORE\[23\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_2_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_6_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_3_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvss_east_0 VDD VSS VDD gf180mcu_ws_io__dvss
+XIO_FILL_IO_WEST_16_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_1_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_8_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_6_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_15_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_SOUTH_3_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_10_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_4_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_18_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_3_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[37\].pad bidir_CORE2PAD\[37\] bidir_CORE2PAD_CS\[37\] VDD VSS bidir_CORE2PAD_IE\[37\]
++ bidir_CORE2PAD_OE\[37\] bidir_PAD[37] bidir_CORE2PAD_PD\[37\] bidir_CORE2PAD_PU\[37\]
++ bidir_CORE2PAD_SL\[37\] VDD VSS bidir_PAD2CORE\[37\] gf180mcu_fd_io__bi_24t
+Xbidir\[22\].pad bidir_CORE2PAD\[22\] bidir_CORE2PAD_CS\[22\] VDD VSS bidir_CORE2PAD_IE\[22\]
++ bidir_CORE2PAD_OE\[22\] bidir_PAD[22] bidir_CORE2PAD_PD\[22\] bidir_CORE2PAD_PU\[22\]
++ bidir_CORE2PAD_SL\[22\] VDD VSS bidir_PAD2CORE\[22\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_1_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_2_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvss_east_1 VDD VSS VDD gf180mcu_ws_io__dvss
+XIO_FILL_IO_NORTH_17_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_16_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_6_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_14_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_3_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_2_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_6_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_0_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_1370 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+Xdvss_east_2 VDD VSS VDD gf180mcu_ws_io__dvss
+XIO_FILL_IO_WEST_9_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xboot_rom VDD VSS rom_bus_in\[0\] rom_bus_in\[1\] rom_bus_in\[2\] rom_bus_in\[3\]
++ rom_bus_in\[4\] rom_bus_in\[5\] rom_bus_in\[6\] rom_bus_in\[7\] clk_PAD2CORE last_addr\[0\]
++ last_addr\[1\] last_addr\[2\] last_addr\[3\] last_addr\[4\] last_addr\[5\] last_addr\[6\]
++ last_addr\[7\] reset boot_rom
+XIO_FILL_IO_WEST_4_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_16_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_15_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[36\].pad bidir_CORE2PAD\[36\] bidir_CORE2PAD_CS\[36\] VDD VSS bidir_CORE2PAD_IE\[36\]
++ bidir_CORE2PAD_OE\[36\] bidir_PAD[36] bidir_CORE2PAD_PD\[36\] bidir_CORE2PAD_PU\[36\]
++ bidir_CORE2PAD_SL\[36\] VDD VSS bidir\[36\].pad/Y gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_4_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_4_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[21\].pad bidir_CORE2PAD\[21\] bidir_CORE2PAD_CS\[21\] VDD VSS bidir_CORE2PAD_IE\[21\]
++ bidir_CORE2PAD_OE\[21\] bidir_PAD[21] bidir_CORE2PAD_PD\[21\] bidir_CORE2PAD_PU\[21\]
++ bidir_CORE2PAD_SL\[21\] VDD VSS bidir_PAD2CORE\[21\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_WEST_12_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_0_1070 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_WEST_17_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_5_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_16_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_1_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_1_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_4_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_6_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_20_1360 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+Xdvss_east_3 VDD VSS VDD gf180mcu_ws_io__dvss
+XIO_FILL_IO_WEST_19_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_18_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_3_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_1060 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_0_1071 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_NORTH_10_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_10_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[20\].pad bidir_CORE2PAD\[20\] bidir_CORE2PAD_CS\[20\] VDD VSS bidir_CORE2PAD_IE\[20\]
++ bidir_CORE2PAD_OE\[20\] bidir_PAD[20] bidir_CORE2PAD_PD\[20\] bidir_CORE2PAD_PU\[20\]
++ bidir_CORE2PAD_SL\[20\] VDD VSS bidir_PAD2CORE\[20\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_1_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_7_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+Xbidir\[35\].pad bidir_CORE2PAD\[35\] bidir_CORE2PAD_CS\[35\] VDD VSS bidir_CORE2PAD_IE\[35\]
++ bidir_CORE2PAD_OE\[35\] bidir_PAD[35] bidir_CORE2PAD_PD\[35\] bidir_CORE2PAD_PU\[35\]
++ bidir_CORE2PAD_SL\[35\] VDD VSS bidir\[35\].pad/Y gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_0_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_6_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_6_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_15_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_13_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_5_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_18_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_1_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_0_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_8_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_17_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_1050 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_0_1072 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_EAST_16_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_1370 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_EAST_6_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_12_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_9_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_14_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_13_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_7_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_2_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_WEST_7_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_5_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[34\].pad bidir_CORE2PAD\[34\] bidir_CORE2PAD_CS\[34\] VDD VSS bidir_CORE2PAD_IE\[34\]
++ bidir_CORE2PAD_OE\[34\] bidir_PAD[34] bidir_CORE2PAD_PD\[34\] bidir_CORE2PAD_PU\[34\]
++ bidir_CORE2PAD_SL\[34\] VDD VSS bidir_PAD2CORE\[34\] gf180mcu_fd_io__bi_24t
+Xbidir\[49\].pad bidir_CORE2PAD\[49\] bidir_CORE2PAD_CS\[49\] VDD VSS bidir_CORE2PAD_IE\[49\]
++ bidir_CORE2PAD_OE\[49\] bidir_PAD[49] bidir_CORE2PAD_PD\[49\] bidir_CORE2PAD_PU\[49\]
++ bidir_CORE2PAD_SL\[49\] VDD VSS bidir_PAD2CORE\[49\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_EAST_3_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_15_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_SOUTH_17_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_11_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_18_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_8_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_7_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_12_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_8_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_14_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_1073 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+Xsram0 A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\] A_all\[6\]
++ A_all\[7\] A_all\[8\] CEN_all clk_PAD2CORE D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_0 Q0\[0\] Q0\[1\] Q0\[2\] Q0\[3\]
++ Q0\[4\] Q0\[5\] Q0\[6\] Q0\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\] WEN_all\[3\]
++ WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] gf180_ram_512x8_wrapper_as2650
+XIO_FILL_IO_NORTH_2_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_10_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_12_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_4_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_17_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_1360 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_WEST_17_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_5_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_11_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_1300 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_NORTH_1_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_7_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_9_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_1_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_14_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_9_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvdd_east_0 VDD VSS VSS gf180mcu_ws_io__dvdd
+XIO_FILL_IO_SOUTH_4_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[33\].pad bidir_CORE2PAD\[33\] bidir_CORE2PAD_CS\[33\] VDD VSS bidir_CORE2PAD_IE\[33\]
++ bidir_CORE2PAD_OE\[33\] bidir_PAD[33] bidir_CORE2PAD_PD\[33\] bidir_CORE2PAD_PU\[33\]
++ bidir_CORE2PAD_SL\[33\] VDD VSS bidir_PAD2CORE\[33\] gf180mcu_fd_io__bi_24t
+XIO_FILL_IO_NORTH_6_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xbidir\[48\].pad bidir_CORE2PAD\[48\] bidir_CORE2PAD_CS\[48\] VDD VSS bidir_CORE2PAD_IE\[48\]
++ bidir_CORE2PAD_OE\[48\] bidir_PAD[48] bidir_CORE2PAD_PD\[48\] bidir_CORE2PAD_PU\[48\]
++ bidir_CORE2PAD_SL\[48\] VDD VSS bidir_PAD2CORE\[48\] gf180mcu_fd_io__bi_24t
+Xwrapped_as2650 VDD VSS WEb_ram wrapped_as2650/boot_rom_en bus_addr\[0\] bus_addr\[1\]
++ bus_addr\[2\] bus_addr\[3\] bus_addr\[4\] bus_addr\[5\] bus_cyc bus_data_out\[0\]
++ bus_data_out\[1\] bus_data_out\[2\] bus_data_out\[3\] bus_data_out\[4\] bus_data_out\[5\]
++ bus_data_out\[6\] bus_data_out\[7\] bus_data_gpios\[0\] bus_data_gpios\[1\] bus_data_gpios\[2\]
++ bus_data_gpios\[3\] bus_data_gpios\[4\] bus_data_gpios\[5\] bus_data_gpios\[6\]
++ bus_data_gpios\[7\] bus_data_serial_ports\[0\] bus_data_serial_ports\[1\] bus_data_serial_ports\[2\]
++ bus_data_serial_ports\[3\] bus_data_serial_ports\[4\] bus_data_serial_ports\[5\]
++ bus_data_serial_ports\[6\] bus_data_serial_ports\[7\] bus_data_sid\[0\] bus_data_sid\[1\]
++ bus_data_sid\[2\] bus_data_sid\[3\] bus_data_sid\[4\] bus_data_sid\[5\] bus_data_sid\[6\]
++ bus_data_sid\[7\] bus_data_timers\[0\] bus_data_timers\[1\] bus_data_timers\[2\]
++ bus_data_timers\[3\] bus_data_timers\[4\] bus_data_timers\[5\] bus_data_timers\[6\]
++ bus_data_timers\[7\] bus_we_gpios bus_we_serial_ports bus_we_sid bus_we_timers clk_PAD2CORE
++ const_zero\[0\] const_zero\[1\] const_zero\[2\] const_zero\[3\] bidir_CORE2PAD_CS\[0\]
++ bidir_CORE2PAD_CS\[10\] bidir_CORE2PAD_CS\[11\] bidir_CORE2PAD_CS\[12\] bidir_CORE2PAD_CS\[13\]
++ bidir_CORE2PAD_CS\[14\] bidir_CORE2PAD_CS\[15\] bidir_CORE2PAD_CS\[16\] bidir_CORE2PAD_CS\[17\]
++ bidir_CORE2PAD_CS\[18\] bidir_CORE2PAD_CS\[1\] bidir_CORE2PAD_CS\[2\] bidir_CORE2PAD_CS\[3\]
++ bidir_CORE2PAD_CS\[4\] bidir_CORE2PAD_CS\[5\] bidir_CORE2PAD_CS\[6\] bidir_CORE2PAD_CS\[7\]
++ bidir_CORE2PAD_CS\[8\] bidir_CORE2PAD_CS\[9\] bidir_CORE2PAD_IE\[0\] bidir_CORE2PAD_IE\[10\]
++ bidir_CORE2PAD_IE\[11\] bidir_CORE2PAD_IE\[12\] bidir_CORE2PAD_IE\[13\] bidir_CORE2PAD_IE\[14\]
++ bidir_CORE2PAD_IE\[15\] bidir_CORE2PAD_IE\[16\] bidir_CORE2PAD_IE\[17\] bidir_CORE2PAD_IE\[18\]
++ bidir_CORE2PAD_IE\[1\] bidir_CORE2PAD_IE\[2\] bidir_CORE2PAD_IE\[3\] bidir_CORE2PAD_IE\[4\]
++ bidir_CORE2PAD_IE\[5\] bidir_CORE2PAD_IE\[6\] bidir_CORE2PAD_IE\[7\] bidir_CORE2PAD_IE\[8\]
++ bidir_CORE2PAD_IE\[9\] bidir_PAD2CORE\[0\] bidir_PAD2CORE\[10\] bidir_PAD2CORE\[11\]
++ bidir_PAD2CORE\[12\] bidir_PAD2CORE\[13\] bidir_PAD2CORE\[14\] bidir_PAD2CORE\[15\]
++ bidir_PAD2CORE\[16\] bidir_PAD2CORE\[17\] bidir_PAD2CORE\[18\] bidir_PAD2CORE\[1\]
++ bidir_PAD2CORE\[2\] bidir_PAD2CORE\[3\] bidir_PAD2CORE\[4\] bidir_PAD2CORE\[5\]
++ bidir_PAD2CORE\[6\] bidir_PAD2CORE\[7\] bidir_PAD2CORE\[8\] bidir_PAD2CORE\[9\]
++ bidir_CORE2PAD_OE\[0\] bidir_CORE2PAD_OE\[10\] bidir_CORE2PAD_OE\[11\] bidir_CORE2PAD_OE\[12\]
++ bidir_CORE2PAD_OE\[13\] bidir_CORE2PAD_OE\[14\] bidir_CORE2PAD_OE\[15\] bidir_CORE2PAD_OE\[16\]
++ bidir_CORE2PAD_OE\[17\] bidir_CORE2PAD_OE\[18\] bidir_CORE2PAD_OE\[1\] bidir_CORE2PAD_OE\[2\]
++ bidir_CORE2PAD_OE\[3\] bidir_CORE2PAD_OE\[4\] bidir_CORE2PAD_OE\[5\] bidir_CORE2PAD_OE\[6\]
++ bidir_CORE2PAD_OE\[7\] bidir_CORE2PAD_OE\[8\] bidir_CORE2PAD_OE\[9\] bidir_CORE2PAD\[0\]
++ bidir_CORE2PAD\[10\] bidir_CORE2PAD\[11\] bidir_CORE2PAD\[12\] bidir_CORE2PAD\[13\]
++ bidir_CORE2PAD\[14\] bidir_CORE2PAD\[15\] bidir_CORE2PAD\[16\] bidir_CORE2PAD\[17\]
++ bidir_CORE2PAD\[18\] bidir_CORE2PAD\[1\] bidir_CORE2PAD\[2\] bidir_CORE2PAD\[3\]
++ bidir_CORE2PAD\[4\] bidir_CORE2PAD\[5\] bidir_CORE2PAD\[6\] bidir_CORE2PAD\[7\]
++ bidir_CORE2PAD\[8\] bidir_CORE2PAD\[9\] bidir_CORE2PAD_PD\[0\] bidir_CORE2PAD_PD\[10\]
++ bidir_CORE2PAD_PD\[11\] bidir_CORE2PAD_PD\[12\] bidir_CORE2PAD_PD\[13\] bidir_CORE2PAD_PD\[14\]
++ bidir_CORE2PAD_PD\[15\] bidir_CORE2PAD_PD\[16\] bidir_CORE2PAD_PD\[17\] bidir_CORE2PAD_PD\[18\]
++ bidir_CORE2PAD_PD\[1\] bidir_CORE2PAD_PD\[2\] bidir_CORE2PAD_PD\[3\] bidir_CORE2PAD_PD\[4\]
++ bidir_CORE2PAD_PD\[5\] bidir_CORE2PAD_PD\[6\] bidir_CORE2PAD_PD\[7\] bidir_CORE2PAD_PD\[8\]
++ bidir_CORE2PAD_PD\[9\] bidir_CORE2PAD_PU\[0\] bidir_CORE2PAD_PU\[10\] bidir_CORE2PAD_PU\[11\]
++ bidir_CORE2PAD_PU\[12\] bidir_CORE2PAD_PU\[13\] bidir_CORE2PAD_PU\[14\] bidir_CORE2PAD_PU\[15\]
++ bidir_CORE2PAD_PU\[16\] bidir_CORE2PAD_PU\[17\] bidir_CORE2PAD_PU\[18\] bidir_CORE2PAD_PU\[1\]
++ bidir_CORE2PAD_PU\[2\] bidir_CORE2PAD_PU\[3\] bidir_CORE2PAD_PU\[4\] bidir_CORE2PAD_PU\[5\]
++ bidir_CORE2PAD_PU\[6\] bidir_CORE2PAD_PU\[7\] bidir_CORE2PAD_PU\[8\] bidir_CORE2PAD_PU\[9\]
++ bidir_CORE2PAD_SL\[0\] bidir_CORE2PAD_SL\[10\] bidir_CORE2PAD_SL\[11\] bidir_CORE2PAD_SL\[12\]
++ bidir_CORE2PAD_SL\[13\] bidir_CORE2PAD_SL\[14\] bidir_CORE2PAD_SL\[15\] bidir_CORE2PAD_SL\[16\]
++ bidir_CORE2PAD_SL\[17\] bidir_CORE2PAD_SL\[18\] bidir_CORE2PAD_SL\[1\] bidir_CORE2PAD_SL\[2\]
++ bidir_CORE2PAD_SL\[3\] bidir_CORE2PAD_SL\[4\] bidir_CORE2PAD_SL\[5\] bidir_CORE2PAD_SL\[6\]
++ bidir_CORE2PAD_SL\[7\] bidir_CORE2PAD_SL\[8\] bidir_CORE2PAD_SL\[9\] irq0 irq1 irq2
++ irq3 irq5 irq6 irq7 last_addr\[0\] wrapped_as2650/last_addr[10] wrapped_as2650/last_addr[11]
++ wrapped_as2650/last_addr[12] wrapped_as2650/last_addr[13] wrapped_as2650/last_addr[14]
++ wrapped_as2650/last_addr[15] last_addr\[1\] last_addr\[2\] last_addr\[3\] last_addr\[4\]
++ last_addr\[5\] last_addr\[6\] last_addr\[7\] wrapped_as2650/last_addr[8] wrapped_as2650/last_addr[9]
++ wrapped_as2650/le_hi_act wrapped_as2650/le_lo_act ram_bus_in\[0\] ram_bus_in\[1\]
++ ram_bus_in\[2\] ram_bus_in\[3\] ram_bus_in\[4\] ram_bus_in\[5\] ram_bus_in\[6\]
++ ram_bus_in\[7\] ram_enabled requested_addr\[0\] requested_addr\[10\] requested_addr\[11\]
++ requested_addr\[12\] requested_addr\[13\] requested_addr\[14\] requested_addr\[15\]
++ requested_addr\[1\] requested_addr\[2\] requested_addr\[3\] requested_addr\[4\]
++ requested_addr\[5\] requested_addr\[6\] requested_addr\[7\] requested_addr\[8\]
++ requested_addr\[9\] reset rom_bus_in\[0\] rom_bus_in\[1\] rom_bus_in\[2\] rom_bus_in\[3\]
++ rom_bus_in\[4\] rom_bus_in\[5\] rom_bus_in\[6\] rom_bus_in\[7\] rom_bus_out\[0\]
++ rom_bus_out\[1\] rom_bus_out\[2\] rom_bus_out\[3\] rom_bus_out\[4\] rom_bus_out\[5\]
++ rom_bus_out\[6\] rom_bus_out\[7\] rst_n_PAD2CORE wrapped_as2650
+XIO_FILL_IO_NORTH_13_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_12_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_4_1100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_19_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_9_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_11_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_6_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_13_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_0_1074 VDD VSS VDD VSS gf180mcu_fd_io__fillnc
+XIO_FILL_IO_WEST_16_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_1_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xsram1 A_all\[0\] A_all\[1\] A_all\[2\] A_all\[3\] A_all\[4\] A_all\[5\] A_all\[6\]
++ A_all\[7\] A_all\[8\] CEN_all clk_PAD2CORE D_all\[0\] D_all\[1\] D_all\[2\] D_all\[3\]
++ D_all\[4\] D_all\[5\] D_all\[6\] D_all\[7\] GWEN_1 Q1\[0\] Q1\[1\] Q1\[2\] Q1\[3\]
++ Q1\[4\] Q1\[5\] Q1\[6\] Q1\[7\] VDD VSS WEN_all\[0\] WEN_all\[1\] WEN_all\[2\] WEN_all\[3\]
++ WEN_all\[4\] WEN_all\[5\] WEN_all\[6\] WEN_all\[7\] gf180_ram_512x8_wrapper_as2650
+XIO_FILL_IO_NORTH_3_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_9_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_0_1350 VDD VSS VDD VSS gf180mcu_fd_io__fill1
+XIO_FILL_IO_NORTH_10_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_17_800 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_3_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_4_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_16_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_20_1200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_7_900 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_6_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_8_100 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_15_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_14_600 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+Xdvdd_east_1 VDD VSS VSS gf180mcu_ws_io__dvdd
+XIO_FILL_IO_WEST_8_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_0_300 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_16_1000 VDD VSS VDD VSS gf180mcu_fd_io__fill5
+XIO_FILL_IO_EAST_4_700 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_20_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_SOUTH_3_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_11_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_NORTH_12_400 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_19_500 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_WEST_5_200 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+XIO_FILL_IO_EAST_2_0 VDD VSS VDD VSS gf180mcu_fd_io__fill10
+.ends
+

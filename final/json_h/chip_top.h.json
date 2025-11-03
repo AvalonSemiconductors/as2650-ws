@@ -1,0 +1,3940 @@
+{
+  "creator": "Yosys 0.54 (git sha1 db72ec3bde296a9512b2d1e6fabf81cfb07c2c1b, clang++ 19.1.7 -fPIC -O3)",
+  "modules": {
+    "chip_top": {
+      "attributes": {
+        "hdlname": "chip_top",
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:6.1-659.10"
+      },
+      "parameter_default_values": {
+        "NUM_BIDIR": "00000000000000000000000000110110"
+      },
+      "ports": {
+        "VDD": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        },
+        "VSS": {
+          "direction": "inout",
+          "bits": [ 3 ]
+        },
+        "clk_PAD": {
+          "direction": "inout",
+          "bits": [ 4 ]
+        },
+        "rst_n_PAD": {
+          "direction": "inout",
+          "bits": [ 5 ]
+        },
+        "bidir_PAD": {
+          "direction": "inout",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 ]
+        }
+      },
+      "cells": {
+        "avali_logo": {
+          "hide_name": 0,
+          "type": "avali_logo",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:649.16-649.28"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "bidir[0].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "CS": [ 61 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 62 ],
+            "OE": [ 63 ],
+            "PAD": [ 6 ],
+            "PD": [ 64 ],
+            "PU": [ 65 ],
+            "SL": [ 66 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 67 ]
+          }
+        },
+        "bidir[10].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 68 ],
+            "CS": [ 69 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 70 ],
+            "OE": [ 71 ],
+            "PAD": [ 16 ],
+            "PD": [ 72 ],
+            "PU": [ 73 ],
+            "SL": [ 74 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 75 ]
+          }
+        },
+        "bidir[11].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76 ],
+            "CS": [ 77 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 78 ],
+            "OE": [ 79 ],
+            "PAD": [ 17 ],
+            "PD": [ 80 ],
+            "PU": [ 81 ],
+            "SL": [ 82 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 83 ]
+          }
+        },
+        "bidir[12].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 84 ],
+            "CS": [ 85 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 86 ],
+            "OE": [ 87 ],
+            "PAD": [ 18 ],
+            "PD": [ 88 ],
+            "PU": [ 89 ],
+            "SL": [ 90 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 91 ]
+          }
+        },
+        "bidir[13].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92 ],
+            "CS": [ 93 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 94 ],
+            "OE": [ 95 ],
+            "PAD": [ 19 ],
+            "PD": [ 96 ],
+            "PU": [ 97 ],
+            "SL": [ 98 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 99 ]
+          }
+        },
+        "bidir[14].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 100 ],
+            "CS": [ 101 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 102 ],
+            "OE": [ 103 ],
+            "PAD": [ 20 ],
+            "PD": [ 104 ],
+            "PU": [ 105 ],
+            "SL": [ 106 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 107 ]
+          }
+        },
+        "bidir[15].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 108 ],
+            "CS": [ 109 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 110 ],
+            "OE": [ 111 ],
+            "PAD": [ 21 ],
+            "PD": [ 112 ],
+            "PU": [ 113 ],
+            "SL": [ 114 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 115 ]
+          }
+        },
+        "bidir[16].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 116 ],
+            "CS": [ 117 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 118 ],
+            "OE": [ 119 ],
+            "PAD": [ 22 ],
+            "PD": [ 120 ],
+            "PU": [ 121 ],
+            "SL": [ 122 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 123 ]
+          }
+        },
+        "bidir[17].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 124 ],
+            "CS": [ 125 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 126 ],
+            "OE": [ 127 ],
+            "PAD": [ 23 ],
+            "PD": [ 128 ],
+            "PU": [ 129 ],
+            "SL": [ 130 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 131 ]
+          }
+        },
+        "bidir[18].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 132 ],
+            "CS": [ 133 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 134 ],
+            "OE": [ 135 ],
+            "PAD": [ 24 ],
+            "PD": [ 136 ],
+            "PU": [ 137 ],
+            "SL": [ 138 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 139 ]
+          }
+        },
+        "bidir[19].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 140 ],
+            "CS": [ 141 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 142 ],
+            "OE": [ 143 ],
+            "PAD": [ 25 ],
+            "PD": [ 144 ],
+            "PU": [ 145 ],
+            "SL": [ 146 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 147 ]
+          }
+        },
+        "bidir[1].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 148 ],
+            "CS": [ 149 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 150 ],
+            "OE": [ 151 ],
+            "PAD": [ 7 ],
+            "PD": [ 152 ],
+            "PU": [ 153 ],
+            "SL": [ 154 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 155 ]
+          }
+        },
+        "bidir[20].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 156 ],
+            "CS": [ 157 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 158 ],
+            "OE": [ 159 ],
+            "PAD": [ 26 ],
+            "PD": [ 160 ],
+            "PU": [ 161 ],
+            "SL": [ 162 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 163 ]
+          }
+        },
+        "bidir[21].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 164 ],
+            "CS": [ 165 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 166 ],
+            "OE": [ 167 ],
+            "PAD": [ 27 ],
+            "PD": [ 168 ],
+            "PU": [ 169 ],
+            "SL": [ 170 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 171 ]
+          }
+        },
+        "bidir[22].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 172 ],
+            "CS": [ 173 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 174 ],
+            "OE": [ 175 ],
+            "PAD": [ 28 ],
+            "PD": [ 176 ],
+            "PU": [ 177 ],
+            "SL": [ 178 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 179 ]
+          }
+        },
+        "bidir[23].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 180 ],
+            "CS": [ 181 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 182 ],
+            "OE": [ 183 ],
+            "PAD": [ 29 ],
+            "PD": [ 184 ],
+            "PU": [ 185 ],
+            "SL": [ 186 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 187 ]
+          }
+        },
+        "bidir[24].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 188 ],
+            "CS": [ 189 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 190 ],
+            "OE": [ 191 ],
+            "PAD": [ 30 ],
+            "PD": [ 192 ],
+            "PU": [ 193 ],
+            "SL": [ 194 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 195 ]
+          }
+        },
+        "bidir[25].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 196 ],
+            "CS": [ 197 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 198 ],
+            "OE": [ 199 ],
+            "PAD": [ 31 ],
+            "PD": [ 200 ],
+            "PU": [ 201 ],
+            "SL": [ 202 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 203 ]
+          }
+        },
+        "bidir[26].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 204 ],
+            "CS": [ 205 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 206 ],
+            "OE": [ 207 ],
+            "PAD": [ 32 ],
+            "PD": [ 208 ],
+            "PU": [ 209 ],
+            "SL": [ 210 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 211 ]
+          }
+        },
+        "bidir[27].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 212 ],
+            "CS": [ 213 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 214 ],
+            "OE": [ 215 ],
+            "PAD": [ 33 ],
+            "PD": [ 216 ],
+            "PU": [ 217 ],
+            "SL": [ 218 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 219 ]
+          }
+        },
+        "bidir[28].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 220 ],
+            "CS": [ 221 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 222 ],
+            "OE": [ 223 ],
+            "PAD": [ 34 ],
+            "PD": [ 224 ],
+            "PU": [ 225 ],
+            "SL": [ 226 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 227 ]
+          }
+        },
+        "bidir[29].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 228 ],
+            "CS": [ 229 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 230 ],
+            "OE": [ 231 ],
+            "PAD": [ 35 ],
+            "PD": [ 232 ],
+            "PU": [ 233 ],
+            "SL": [ 234 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 235 ]
+          }
+        },
+        "bidir[2].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 236 ],
+            "CS": [ 237 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 238 ],
+            "OE": [ 239 ],
+            "PAD": [ 8 ],
+            "PD": [ 240 ],
+            "PU": [ 241 ],
+            "SL": [ 242 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 243 ]
+          }
+        },
+        "bidir[30].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 244 ],
+            "CS": [ 245 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 246 ],
+            "OE": [ 247 ],
+            "PAD": [ 36 ],
+            "PD": [ 248 ],
+            "PU": [ 249 ],
+            "SL": [ 250 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 251 ]
+          }
+        },
+        "bidir[31].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 252 ],
+            "CS": [ 253 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 254 ],
+            "OE": [ 255 ],
+            "PAD": [ 37 ],
+            "PD": [ 256 ],
+            "PU": [ 257 ],
+            "SL": [ 258 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 259 ]
+          }
+        },
+        "bidir[32].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 260 ],
+            "CS": [ 261 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 262 ],
+            "OE": [ 263 ],
+            "PAD": [ 38 ],
+            "PD": [ 264 ],
+            "PU": [ 265 ],
+            "SL": [ 266 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 267 ]
+          }
+        },
+        "bidir[33].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 268 ],
+            "CS": [ 269 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 270 ],
+            "OE": [ 271 ],
+            "PAD": [ 39 ],
+            "PD": [ 272 ],
+            "PU": [ 273 ],
+            "SL": [ 274 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 275 ]
+          }
+        },
+        "bidir[34].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 276 ],
+            "CS": [ 277 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 278 ],
+            "OE": [ 279 ],
+            "PAD": [ 40 ],
+            "PD": [ 280 ],
+            "PU": [ 281 ],
+            "SL": [ 282 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 283 ]
+          }
+        },
+        "bidir[35].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 284 ],
+            "CS": [ 285 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 286 ],
+            "OE": [ 287 ],
+            "PAD": [ 41 ],
+            "PD": [ 288 ],
+            "PU": [ 289 ],
+            "SL": [ 290 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 291 ]
+          }
+        },
+        "bidir[36].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 292 ],
+            "CS": [ 293 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 294 ],
+            "OE": [ 295 ],
+            "PAD": [ 42 ],
+            "PD": [ 296 ],
+            "PU": [ 297 ],
+            "SL": [ 298 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 299 ]
+          }
+        },
+        "bidir[37].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 300 ],
+            "CS": [ 301 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 302 ],
+            "OE": [ 303 ],
+            "PAD": [ 43 ],
+            "PD": [ 304 ],
+            "PU": [ 305 ],
+            "SL": [ 306 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 307 ]
+          }
+        },
+        "bidir[38].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 308 ],
+            "CS": [ 309 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 310 ],
+            "OE": [ 311 ],
+            "PAD": [ 44 ],
+            "PD": [ 312 ],
+            "PU": [ 313 ],
+            "SL": [ 314 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 315 ]
+          }
+        },
+        "bidir[39].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 316 ],
+            "CS": [ 317 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 318 ],
+            "OE": [ 319 ],
+            "PAD": [ 45 ],
+            "PD": [ 320 ],
+            "PU": [ 321 ],
+            "SL": [ 322 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 323 ]
+          }
+        },
+        "bidir[3].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 324 ],
+            "CS": [ 325 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 326 ],
+            "OE": [ 327 ],
+            "PAD": [ 9 ],
+            "PD": [ 328 ],
+            "PU": [ 329 ],
+            "SL": [ 330 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 331 ]
+          }
+        },
+        "bidir[40].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 332 ],
+            "CS": [ 333 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 334 ],
+            "OE": [ 335 ],
+            "PAD": [ 46 ],
+            "PD": [ 336 ],
+            "PU": [ 337 ],
+            "SL": [ 338 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 339 ]
+          }
+        },
+        "bidir[41].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 340 ],
+            "CS": [ 341 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 342 ],
+            "OE": [ 343 ],
+            "PAD": [ 47 ],
+            "PD": [ 344 ],
+            "PU": [ 345 ],
+            "SL": [ 346 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 347 ]
+          }
+        },
+        "bidir[42].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 348 ],
+            "CS": [ 349 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 350 ],
+            "OE": [ 351 ],
+            "PAD": [ 48 ],
+            "PD": [ 352 ],
+            "PU": [ 353 ],
+            "SL": [ 354 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 355 ]
+          }
+        },
+        "bidir[43].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 356 ],
+            "CS": [ 357 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 358 ],
+            "OE": [ 359 ],
+            "PAD": [ 49 ],
+            "PD": [ 360 ],
+            "PU": [ 361 ],
+            "SL": [ 362 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 363 ]
+          }
+        },
+        "bidir[44].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 364 ],
+            "CS": [ 365 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 366 ],
+            "OE": [ 367 ],
+            "PAD": [ 50 ],
+            "PD": [ 368 ],
+            "PU": [ 369 ],
+            "SL": [ 370 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 371 ]
+          }
+        },
+        "bidir[45].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 372 ],
+            "CS": [ 373 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 374 ],
+            "OE": [ 375 ],
+            "PAD": [ 51 ],
+            "PD": [ 376 ],
+            "PU": [ 377 ],
+            "SL": [ 378 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 379 ]
+          }
+        },
+        "bidir[46].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 380 ],
+            "CS": [ 381 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 382 ],
+            "OE": [ 383 ],
+            "PAD": [ 52 ],
+            "PD": [ 384 ],
+            "PU": [ 385 ],
+            "SL": [ 386 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 387 ]
+          }
+        },
+        "bidir[47].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 388 ],
+            "CS": [ 389 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 390 ],
+            "OE": [ 391 ],
+            "PAD": [ 53 ],
+            "PD": [ 392 ],
+            "PU": [ 393 ],
+            "SL": [ 394 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 395 ]
+          }
+        },
+        "bidir[48].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 396 ],
+            "CS": [ 397 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 398 ],
+            "OE": [ 399 ],
+            "PAD": [ 54 ],
+            "PD": [ 400 ],
+            "PU": [ 401 ],
+            "SL": [ 402 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 403 ]
+          }
+        },
+        "bidir[49].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 404 ],
+            "CS": [ 405 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 406 ],
+            "OE": [ 407 ],
+            "PAD": [ 55 ],
+            "PD": [ 408 ],
+            "PU": [ 409 ],
+            "SL": [ 410 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 411 ]
+          }
+        },
+        "bidir[4].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 412 ],
+            "CS": [ 413 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 414 ],
+            "OE": [ 415 ],
+            "PAD": [ 10 ],
+            "PD": [ 416 ],
+            "PU": [ 417 ],
+            "SL": [ 418 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 419 ]
+          }
+        },
+        "bidir[50].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 420 ],
+            "CS": [ 421 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 422 ],
+            "OE": [ 423 ],
+            "PAD": [ 56 ],
+            "PD": [ 424 ],
+            "PU": [ 425 ],
+            "SL": [ 426 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 427 ]
+          }
+        },
+        "bidir[51].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 428 ],
+            "CS": [ 429 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 430 ],
+            "OE": [ 431 ],
+            "PAD": [ 57 ],
+            "PD": [ 432 ],
+            "PU": [ 433 ],
+            "SL": [ 434 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 435 ]
+          }
+        },
+        "bidir[52].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 436 ],
+            "CS": [ 437 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 438 ],
+            "OE": [ 439 ],
+            "PAD": [ 58 ],
+            "PD": [ 440 ],
+            "PU": [ 441 ],
+            "SL": [ 442 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 443 ]
+          }
+        },
+        "bidir[53].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 444 ],
+            "CS": [ 445 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 446 ],
+            "OE": [ 447 ],
+            "PAD": [ 59 ],
+            "PD": [ 448 ],
+            "PU": [ 449 ],
+            "SL": [ 450 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 451 ]
+          }
+        },
+        "bidir[5].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 452 ],
+            "CS": [ 453 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 454 ],
+            "OE": [ 455 ],
+            "PAD": [ 11 ],
+            "PD": [ 456 ],
+            "PU": [ 457 ],
+            "SL": [ 458 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 459 ]
+          }
+        },
+        "bidir[6].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 460 ],
+            "CS": [ 461 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 462 ],
+            "OE": [ 463 ],
+            "PAD": [ 12 ],
+            "PD": [ 464 ],
+            "PU": [ 465 ],
+            "SL": [ 466 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 467 ]
+          }
+        },
+        "bidir[7].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 468 ],
+            "CS": [ 469 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 470 ],
+            "OE": [ 471 ],
+            "PAD": [ 13 ],
+            "PD": [ 472 ],
+            "PU": [ 473 ],
+            "SL": [ 474 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 475 ]
+          }
+        },
+        "bidir[8].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 476 ],
+            "CS": [ 477 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 478 ],
+            "OE": [ 479 ],
+            "PAD": [ 14 ],
+            "PD": [ 480 ],
+            "PU": [ 481 ],
+            "SL": [ 482 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 483 ]
+          }
+        },
+        "bidir[9].pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__bi_24t",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:237.32-256.10"
+          },
+          "port_directions": {
+            "A": "input",
+            "CS": "input",
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "IE": "input",
+            "OE": "input",
+            "PAD": "inout",
+            "PD": "input",
+            "PU": "input",
+            "SL": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 484 ],
+            "CS": [ 485 ],
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "IE": [ 486 ],
+            "OE": [ 487 ],
+            "PAD": [ 15 ],
+            "PD": [ 488 ],
+            "PU": [ 489 ],
+            "SL": [ 490 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 491 ]
+          }
+        },
+        "boot_rom": {
+          "hide_name": 0,
+          "type": "boot_rom",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:453.14-462.6"
+          },
+          "port_directions": {
+            "VDD": "inout",
+            "VSS": "inout",
+            "bus_out": "output",
+            "clk_i": "input",
+            "last_addr": "input",
+            "rst": "input"
+          },
+          "connections": {
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "bus_out": [ 492, 493, 494, 495, 496, 497, 498, 499 ],
+            "clk_i": [ 500 ],
+            "last_addr": [ 501, 502, 503, 504, 505, 506, 507, 508 ],
+            "rst": [ 509 ]
+          }
+        },
+        "chip_id": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_ip__id",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:653.24-653.34"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "clk_pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__in_s",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:204.26-217.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "PAD": "input",
+            "PD": "input",
+            "PU": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "PAD": [ 4 ],
+            "PD": [ 510 ],
+            "PU": [ 511 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 500 ]
+          }
+        },
+        "dvdd_east_0": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvdd",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:55.26-61.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VSS": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VSS": [ 3 ]
+          }
+        },
+        "dvdd_east_1": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvdd",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:73.26-79.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VSS": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VSS": [ 3 ]
+          }
+        },
+        "dvdd_east_2": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvdd",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:91.26-97.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VSS": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VSS": [ 3 ]
+          }
+        },
+        "dvdd_east_3": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvdd",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:109.26-115.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VSS": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VSS": [ 3 ]
+          }
+        },
+        "dvdd_west_0": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvdd",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:129.26-135.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VSS": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VSS": [ 3 ]
+          }
+        },
+        "dvdd_west_1": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvdd",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:147.26-153.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VSS": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VSS": [ 3 ]
+          }
+        },
+        "dvdd_west_2": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvdd",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:174.26-180.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VSS": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VSS": [ 3 ]
+          }
+        },
+        "dvdd_west_3": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvdd",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:192.26-198.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VSS": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VSS": [ 3 ]
+          }
+        },
+        "dvss_east_0": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:46.26-52.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_east_1": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:64.26-70.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_east_2": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:82.26-88.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_east_3": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:100.26-106.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_north_0": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:119.26-125.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_south_0": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:36.26-42.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_west_0": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:138.26-144.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_west_1": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:156.26-162.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_west_2": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:165.26-171.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "dvss_west_3": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_io__dvss",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:183.26-189.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "VDD": "inout"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "VDD": [ 2 ]
+          }
+        },
+        "gpios": {
+          "hide_name": 0,
+          "type": "gpios",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:347.11-385.6"
+          },
+          "port_directions": {
+            "DAC_clk": "input",
+            "DAC_d1": "input",
+            "DAC_d2": "input",
+            "DAC_le": "input",
+            "RXD": "output",
+            "TXD": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "addr": "input",
+            "bus_cyc": "input",
+            "bus_we": "input",
+            "clk_i": "input",
+            "data_in": "input",
+            "data_out": "output",
+            "io_cs": "output",
+            "io_ie": "output",
+            "io_in": "input",
+            "io_oe": "output",
+            "io_out": "output",
+            "io_pd": "output",
+            "io_pu": "output",
+            "io_sl": "output",
+            "irq0": "output",
+            "irq6": "output",
+            "irq7": "output",
+            "pwm0": "input",
+            "pwm1": "input",
+            "pwm2": "input",
+            "rst": "input",
+            "tmr0_clk": "output",
+            "tmr0_o": "input",
+            "tmr1_clk": "output",
+            "tmr1_o": "input"
+          },
+          "connections": {
+            "DAC_clk": [ 512 ],
+            "DAC_d1": [ 513 ],
+            "DAC_d2": [ 514 ],
+            "DAC_le": [ 515 ],
+            "RXD": [ 516 ],
+            "TXD": [ 517 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "addr": [ 518, 519, 520, 521 ],
+            "bus_cyc": [ 522 ],
+            "bus_we": [ 523 ],
+            "clk_i": [ 500 ],
+            "data_in": [ 524, 525, 526, 527, 528, 529, 530, 531 ],
+            "data_out": [ 532, 533, 534, 535, 536, 537, 538, 539 ],
+            "io_cs": [ 141, 157, 165, 173, 181, 189, 197, 205, 213, 221, 229, 245, 253, 261, 269, 277 ],
+            "io_ie": [ 142, 158, 166, 174, 182, 190, 198, 206, 214, 222, 230, 246, 254, 262, 270, 278 ],
+            "io_in": [ 147, 163, 171, 179, 187, 195, 203, 211, 219, 227, 235, 251, 259, 267, 275, 283 ],
+            "io_oe": [ 143, 159, 167, 175, 183, 191, 199, 207, 215, 223, 231, 247, 255, 263, 271, 279 ],
+            "io_out": [ 140, 156, 164, 172, 180, 188, 196, 204, 212, 220, 228, 244, 252, 260, 268, 276 ],
+            "io_pd": [ 144, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 248, 256, 264, 272, 280 ],
+            "io_pu": [ 145, 161, 169, 177, 185, 193, 201, 209, 217, 225, 233, 249, 257, 265, 273, 281 ],
+            "io_sl": [ 146, 162, 170, 178, 186, 194, 202, 210, 218, 226, 234, 250, 258, 266, 274, 282 ],
+            "irq0": [ 540 ],
+            "irq6": [ 541 ],
+            "irq7": [ 542 ],
+            "pwm0": [ 543 ],
+            "pwm1": [ 544 ],
+            "pwm2": [ 545 ],
+            "rst": [ 509 ],
+            "tmr0_clk": [ 546 ],
+            "tmr0_o": [ 547 ],
+            "tmr1_clk": [ 548 ],
+            "tmr1_o": [ 549 ]
+          }
+        },
+        "ram_controller": {
+          "hide_name": 0,
+          "type": "ram_controller",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:502.20-534.6"
+          },
+          "port_directions": {
+            "A_all": "output",
+            "CEN_all": "output",
+            "D_all": "output",
+            "GWEN_0": "output",
+            "GWEN_1": "output",
+            "GWEN_2": "output",
+            "GWEN_3": "output",
+            "GWEN_4": "output",
+            "GWEN_5": "output",
+            "GWEN_6": "output",
+            "GWEN_7": "output",
+            "Q0": "input",
+            "Q1": "input",
+            "Q2": "input",
+            "Q3": "input",
+            "Q4": "input",
+            "Q5": "input",
+            "Q6": "input",
+            "Q7": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN_all": "output",
+            "WEb_ram": "input",
+            "bus_in": "input",
+            "bus_out": "output",
+            "clk_i": "input",
+            "ram_enabled": "input",
+            "requested_addr": "input",
+            "rst": "input"
+          },
+          "connections": {
+            "A_all": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN_all": [ 559 ],
+            "D_all": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN_0": [ 568 ],
+            "GWEN_1": [ 569 ],
+            "GWEN_2": [ 570 ],
+            "GWEN_3": [ 571 ],
+            "GWEN_4": [ 572 ],
+            "GWEN_5": [ 573 ],
+            "GWEN_6": [ 574 ],
+            "GWEN_7": [ 575 ],
+            "Q0": [ 576, 577, 578, 579, 580, 581, 582, 583 ],
+            "Q1": [ 584, 585, 586, 587, 588, 589, 590, 591 ],
+            "Q2": [ 592, 593, 594, 595, 596, 597, 598, 599 ],
+            "Q3": [ 600, 601, 602, 603, 604, 605, 606, 607 ],
+            "Q4": [ 608, 609, 610, 611, 612, 613, 614, 615 ],
+            "Q5": [ 616, 617, 618, 619, 620, 621, 622, 623 ],
+            "Q6": [ 624, 625, 626, 627, 628, 629, 630, 631 ],
+            "Q7": [ 632, 633, 634, 635, 636, 637, 638, 639 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN_all": [ 640, 641, 642, 643, 644, 645, 646, 647 ],
+            "WEb_ram": [ 648 ],
+            "bus_in": [ 649, 650, 651, 652, 653, 654, 655, 656 ],
+            "bus_out": [ 657, 658, 659, 660, 661, 662, 663, 664 ],
+            "clk_i": [ 500 ],
+            "ram_enabled": [ 665 ],
+            "requested_addr": [ 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681 ],
+            "rst": [ 509 ]
+          }
+        },
+        "rst_n_pad": {
+          "hide_name": 0,
+          "type": "gf180mcu_fd_io__in_c",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:220.26-233.6"
+          },
+          "port_directions": {
+            "DVDD": "inout",
+            "DVSS": "inout",
+            "PAD": "input",
+            "PD": "input",
+            "PU": "input",
+            "VDD": "inout",
+            "VSS": "inout",
+            "Y": "output"
+          },
+          "connections": {
+            "DVDD": [ 2 ],
+            "DVSS": [ 3 ],
+            "PAD": [ 5 ],
+            "PD": [ 682 ],
+            "PU": [ 683 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "Y": [ 684 ]
+          }
+        },
+        "serial_ports": {
+          "hide_name": 0,
+          "type": "serial_ports",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:411.18-434.6"
+          },
+          "port_directions": {
+            "RXD": "input",
+            "TXD": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "addr": "input",
+            "bus_cyc": "input",
+            "bus_we": "input",
+            "clk_i": "input",
+            "data_in": "input",
+            "data_out": "output",
+            "io_cs": "output",
+            "io_ie": "output",
+            "io_in": "input",
+            "io_oe": "output",
+            "io_out": "output",
+            "io_pd": "output",
+            "io_pu": "output",
+            "io_sl": "output",
+            "irq3": "output",
+            "rst": "input"
+          },
+          "connections": {
+            "RXD": [ 516 ],
+            "TXD": [ 517 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "addr": [ 518, 519, 520 ],
+            "bus_cyc": [ 522 ],
+            "bus_we": [ 685 ],
+            "clk_i": [ 500 ],
+            "data_in": [ 524, 525, 526, 527, 528, 529, 530, 531 ],
+            "data_out": [ 686, 687, 688, 689, 690, 691, 692, 693 ],
+            "io_cs": [ 285, 293, 301 ],
+            "io_ie": [ 286, 294, 302 ],
+            "io_in": [ 307 ],
+            "io_oe": [ 287, 295, 303 ],
+            "io_out": [ 284, 292, 300 ],
+            "io_pd": [ 288, 296, 304 ],
+            "io_pu": [ 289, 297, 305 ],
+            "io_sl": [ 290, 298, 306 ],
+            "irq3": [ 694 ],
+            "rst": [ 509 ]
+          }
+        },
+        "sid": {
+          "hide_name": 0,
+          "type": "sid",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:464.9-480.6"
+          },
+          "port_directions": {
+            "DAC_clk": "output",
+            "DAC_dat_1": "output",
+            "DAC_dat_2": "output",
+            "DAC_le": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "addr": "input",
+            "bus_cyc": "input",
+            "bus_in": "input",
+            "bus_out": "output",
+            "bus_we": "input",
+            "clk": "input",
+            "rst": "input"
+          },
+          "connections": {
+            "DAC_clk": [ 512 ],
+            "DAC_dat_1": [ 513 ],
+            "DAC_dat_2": [ 514 ],
+            "DAC_le": [ 515 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "addr": [ 518, 519, 520, 521, 695, 696 ],
+            "bus_cyc": [ 522 ],
+            "bus_in": [ 524, 525, 526, 527, 528, 529, 530, 531 ],
+            "bus_out": [ 697, 698, 699, 700, 701, 702, 703, 704 ],
+            "bus_we": [ 705 ],
+            "clk": [ 500 ],
+            "rst": [ 509 ]
+          }
+        },
+        "sram0": {
+          "hide_name": 0,
+          "type": "gf180_ram_512x8_wrapper_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:536.36-548.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "CEN": "input",
+            "CLK": "input",
+            "D": "input",
+            "GWEN": "input",
+            "Q": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN": "input"
+          },
+          "connections": {
+            "A": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN": [ 559 ],
+            "CLK": [ 500 ],
+            "D": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN": [ 568 ],
+            "Q": [ 576, 577, 578, 579, 580, 581, 582, 583 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN": [ 640, 641, 642, 643, 644, 645, 646, 647 ]
+          }
+        },
+        "sram1": {
+          "hide_name": 0,
+          "type": "gf180_ram_512x8_wrapper_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:550.36-562.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "CEN": "input",
+            "CLK": "input",
+            "D": "input",
+            "GWEN": "input",
+            "Q": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN": "input"
+          },
+          "connections": {
+            "A": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN": [ 559 ],
+            "CLK": [ 500 ],
+            "D": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN": [ 569 ],
+            "Q": [ 584, 585, 586, 587, 588, 589, 590, 591 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN": [ 640, 641, 642, 643, 644, 645, 646, 647 ]
+          }
+        },
+        "sram2": {
+          "hide_name": 0,
+          "type": "gf180_ram_512x8_wrapper_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:564.36-576.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "CEN": "input",
+            "CLK": "input",
+            "D": "input",
+            "GWEN": "input",
+            "Q": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN": "input"
+          },
+          "connections": {
+            "A": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN": [ 559 ],
+            "CLK": [ 500 ],
+            "D": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN": [ 570 ],
+            "Q": [ 592, 593, 594, 595, 596, 597, 598, 599 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN": [ 640, 641, 642, 643, 644, 645, 646, 647 ]
+          }
+        },
+        "sram3": {
+          "hide_name": 0,
+          "type": "gf180_ram_512x8_wrapper_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:578.36-590.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "CEN": "input",
+            "CLK": "input",
+            "D": "input",
+            "GWEN": "input",
+            "Q": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN": "input"
+          },
+          "connections": {
+            "A": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN": [ 559 ],
+            "CLK": [ 500 ],
+            "D": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN": [ 571 ],
+            "Q": [ 600, 601, 602, 603, 604, 605, 606, 607 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN": [ 640, 641, 642, 643, 644, 645, 646, 647 ]
+          }
+        },
+        "sram4": {
+          "hide_name": 0,
+          "type": "gf180_ram_512x8_wrapper_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:592.36-604.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "CEN": "input",
+            "CLK": "input",
+            "D": "input",
+            "GWEN": "input",
+            "Q": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN": "input"
+          },
+          "connections": {
+            "A": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN": [ 559 ],
+            "CLK": [ 500 ],
+            "D": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN": [ 572 ],
+            "Q": [ 608, 609, 610, 611, 612, 613, 614, 615 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN": [ 640, 641, 642, 643, 644, 645, 646, 647 ]
+          }
+        },
+        "sram5": {
+          "hide_name": 0,
+          "type": "gf180_ram_512x8_wrapper_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:606.36-618.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "CEN": "input",
+            "CLK": "input",
+            "D": "input",
+            "GWEN": "input",
+            "Q": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN": "input"
+          },
+          "connections": {
+            "A": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN": [ 559 ],
+            "CLK": [ 500 ],
+            "D": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN": [ 573 ],
+            "Q": [ 616, 617, 618, 619, 620, 621, 622, 623 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN": [ 640, 641, 642, 643, 644, 645, 646, 647 ]
+          }
+        },
+        "sram6": {
+          "hide_name": 0,
+          "type": "gf180_ram_512x8_wrapper_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:620.36-632.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "CEN": "input",
+            "CLK": "input",
+            "D": "input",
+            "GWEN": "input",
+            "Q": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN": "input"
+          },
+          "connections": {
+            "A": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN": [ 559 ],
+            "CLK": [ 500 ],
+            "D": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN": [ 574 ],
+            "Q": [ 624, 625, 626, 627, 628, 629, 630, 631 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN": [ 640, 641, 642, 643, 644, 645, 646, 647 ]
+          }
+        },
+        "sram7": {
+          "hide_name": 0,
+          "type": "gf180_ram_512x8_wrapper_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:634.36-646.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "CEN": "input",
+            "CLK": "input",
+            "D": "input",
+            "GWEN": "input",
+            "Q": "output",
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEN": "input"
+          },
+          "connections": {
+            "A": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+            "CEN": [ 559 ],
+            "CLK": [ 500 ],
+            "D": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+            "GWEN": [ 575 ],
+            "Q": [ 632, 633, 634, 635, 636, 637, 638, 639 ],
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEN": [ 640, 641, 642, 643, 644, 645, 646, 647 ]
+          }
+        },
+        "timers": {
+          "hide_name": 0,
+          "type": "timers",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:387.12-409.6"
+          },
+          "port_directions": {
+            "VDD": "inout",
+            "VSS": "inout",
+            "addr": "input",
+            "bus_cyc": "input",
+            "bus_we": "input",
+            "clk_i": "input",
+            "data_in": "input",
+            "data_out": "output",
+            "irq1": "output",
+            "irq2": "output",
+            "irq5": "output",
+            "pwm0": "output",
+            "pwm1": "output",
+            "pwm2": "output",
+            "rst": "input",
+            "tmr0_clk": "input",
+            "tmr0_o": "output",
+            "tmr1_clk": "input",
+            "tmr1_o": "output"
+          },
+          "connections": {
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "addr": [ 518, 519, 520, 521, 695, 696 ],
+            "bus_cyc": [ 522 ],
+            "bus_we": [ 706 ],
+            "clk_i": [ 500 ],
+            "data_in": [ 524, 525, 526, 527, 528, 529, 530, 531 ],
+            "data_out": [ 707, 708, 709, 710, 711, 712, 713, 714 ],
+            "irq1": [ 715 ],
+            "irq2": [ 716 ],
+            "irq5": [ 717 ],
+            "pwm0": [ 543 ],
+            "pwm1": [ 544 ],
+            "pwm2": [ 545 ],
+            "rst": [ 509 ],
+            "tmr0_clk": [ 546 ],
+            "tmr0_o": [ 547 ],
+            "tmr1_clk": [ 548 ],
+            "tmr1_o": [ 549 ]
+          }
+        },
+        "unused": {
+          "hide_name": 0,
+          "type": "unused",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:436.12-451.6"
+          },
+          "port_directions": {
+            "VDD": "inout",
+            "VSS": "inout",
+            "clk_i": "input",
+            "io_cs": "output",
+            "io_ie": "output",
+            "io_in": "input",
+            "io_oe": "output",
+            "io_out": "output",
+            "io_pd": "output",
+            "io_pu": "output",
+            "io_sl": "output",
+            "rst": "input"
+          },
+          "connections": {
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "clk_i": [ 500 ],
+            "io_cs": [ 309, 317, 333, 341, 349, 357, 365, 373, 381, 389, 397, 405, 421, 429, 437, 445 ],
+            "io_ie": [ 310, 318, 334, 342, 350, 358, 366, 374, 382, 390, 398, 406, 422, 430, 438, 446 ],
+            "io_in": [ 315, 323, 339, 347, 355, 363, 371, 379, 387, 395, 403, 411, 427, 435, 443, 451 ],
+            "io_oe": [ 311, 319, 335, 343, 351, 359, 367, 375, 383, 391, 399, 407, 423, 431, 439, 447 ],
+            "io_out": [ 308, 316, 332, 340, 348, 356, 364, 372, 380, 388, 396, 404, 420, 428, 436, 444 ],
+            "io_pd": [ 312, 320, 336, 344, 352, 360, 368, 376, 384, 392, 400, 408, 424, 432, 440, 448 ],
+            "io_pu": [ 313, 321, 337, 345, 353, 361, 369, 377, 385, 393, 401, 409, 425, 433, 441, 449 ],
+            "io_sl": [ 314, 322, 338, 346, 354, 362, 370, 378, 386, 394, 402, 410, 426, 434, 442, 450 ],
+            "rst": [ 509 ]
+          }
+        },
+        "wafer_space_logo": {
+          "hide_name": 0,
+          "type": "gf180mcu_ws_ip__logo",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:657.26-657.45"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "wrapped_as2650": {
+          "hide_name": 0,
+          "type": "wrapped_as2650",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:290.20-331.6"
+          },
+          "port_directions": {
+            "VDD": "inout",
+            "VSS": "inout",
+            "WEb_ram": "output",
+            "boot_rom_en": "output",
+            "bus_addr": "output",
+            "bus_cyc": "output",
+            "bus_data_out": "output",
+            "bus_in_gpios": "input",
+            "bus_in_serial_ports": "input",
+            "bus_in_sid": "input",
+            "bus_in_timers": "input",
+            "bus_we_gpios": "output",
+            "bus_we_serial_ports": "output",
+            "bus_we_sid": "output",
+            "bus_we_timers": "output",
+            "clk_i": "input",
+            "const_zero": "output",
+            "io_cs": "output",
+            "io_ie": "output",
+            "io_in": "input",
+            "io_oe": "output",
+            "io_out": "output",
+            "io_pd": "output",
+            "io_pu": "output",
+            "io_sl": "output",
+            "irqs": "input",
+            "last_addr": "output",
+            "le_hi_act": "output",
+            "le_lo_act": "output",
+            "ram_bus_in": "input",
+            "ram_enabled": "output",
+            "requested_addr": "output",
+            "reset_out": "output",
+            "rom_bus_in": "input",
+            "rom_bus_out": "output",
+            "rst_n": "input"
+          },
+          "connections": {
+            "VDD": [ 2 ],
+            "VSS": [ 3 ],
+            "WEb_ram": [ 648 ],
+            "boot_rom_en": [ 718 ],
+            "bus_addr": [ 518, 519, 520, 521, 695, 696 ],
+            "bus_cyc": [ 522 ],
+            "bus_data_out": [ 524, 525, 526, 527, 528, 529, 530, 531 ],
+            "bus_in_gpios": [ 532, 533, 534, 535, 536, 537, 538, 539 ],
+            "bus_in_serial_ports": [ 686, 687, 688, 689, 690, 691, 692, 693 ],
+            "bus_in_sid": [ 697, 698, 699, 700, 701, 702, 703, 704 ],
+            "bus_in_timers": [ 707, 708, 709, 710, 711, 712, 713, 714 ],
+            "bus_we_gpios": [ 523 ],
+            "bus_we_serial_ports": [ 685 ],
+            "bus_we_sid": [ 705 ],
+            "bus_we_timers": [ 706 ],
+            "clk_i": [ 500 ],
+            "const_zero": [ 683, 682, 511, 510 ],
+            "io_cs": [ 61, 149, 237, 325, 413, 453, 461, 469, 477, 485, 69, 77, 85, 93, 101, 109, 117, 125, 133 ],
+            "io_ie": [ 62, 150, 238, 326, 414, 454, 462, 470, 478, 486, 70, 78, 86, 94, 102, 110, 118, 126, 134 ],
+            "io_in": [ 67, 155, 243, 331, 419, 459, 467, 475, 483, 491, 75, 83, 91, 99, 107, 115, 123, 131, 139 ],
+            "io_oe": [ 63, 151, 239, 327, 415, 455, 463, 471, 479, 487, 71, 79, 87, 95, 103, 111, 119, 127, 135 ],
+            "io_out": [ 60, 148, 236, 324, 412, 452, 460, 468, 476, 484, 68, 76, 84, 92, 100, 108, 116, 124, 132 ],
+            "io_pd": [ 64, 152, 240, 328, 416, 456, 464, 472, 480, 488, 72, 80, 88, 96, 104, 112, 120, 128, 136 ],
+            "io_pu": [ 65, 153, 241, 329, 417, 457, 465, 473, 481, 489, 73, 81, 89, 97, 105, 113, 121, 129, 137 ],
+            "io_sl": [ 66, 154, 242, 330, 418, 458, 466, 474, 482, 490, 74, 82, 90, 98, 106, 114, 122, 130, 138 ],
+            "irqs": [ 540, 715, 716, 694, 717, 541, 542 ],
+            "last_addr": [ 501, 502, 503, 504, 505, 506, 507, 508, 719, 720, 721, 722, 723, 724, 725, 726 ],
+            "le_hi_act": [ 727 ],
+            "le_lo_act": [ 728 ],
+            "ram_bus_in": [ 657, 658, 659, 660, 661, 662, 663, 664 ],
+            "ram_enabled": [ 665 ],
+            "requested_addr": [ 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681 ],
+            "reset_out": [ 509 ],
+            "rom_bus_in": [ 492, 493, 494, 495, 496, 497, 498, 499 ],
+            "rom_bus_out": [ 649, 650, 651, 652, 653, 654, 655, 656 ],
+            "rst_n": [ 684 ]
+          }
+        }
+      },
+      "netnames": {
+        "A_all": {
+          "hide_name": 0,
+          "bits": [ 550, 551, 552, 553, 554, 555, 556, 557, 558 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:484.16-484.21"
+          }
+        },
+        "CEN_all": {
+          "hide_name": 0,
+          "bits": [ 559 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:482.10-482.17"
+          }
+        },
+        "DAC_clk": {
+          "hide_name": 0,
+          "bits": [ 512 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:342.10-342.17"
+          }
+        },
+        "DAC_d1": {
+          "hide_name": 0,
+          "bits": [ 513 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:344.10-344.16"
+          }
+        },
+        "DAC_d2": {
+          "hide_name": 0,
+          "bits": [ 514 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:345.10-345.16"
+          }
+        },
+        "DAC_le": {
+          "hide_name": 0,
+          "bits": [ 515 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:343.10-343.16"
+          }
+        },
+        "D_all": {
+          "hide_name": 0,
+          "bits": [ 560, 561, 562, 563, 564, 565, 566, 567 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:485.16-485.21"
+          }
+        },
+        "GWEN_0": {
+          "hide_name": 0,
+          "bits": [ 568 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:486.10-486.16"
+          }
+        },
+        "GWEN_1": {
+          "hide_name": 0,
+          "bits": [ 569 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:487.10-487.16"
+          }
+        },
+        "GWEN_2": {
+          "hide_name": 0,
+          "bits": [ 570 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:488.10-488.16"
+          }
+        },
+        "GWEN_3": {
+          "hide_name": 0,
+          "bits": [ 571 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:489.10-489.16"
+          }
+        },
+        "GWEN_4": {
+          "hide_name": 0,
+          "bits": [ 572 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:490.10-490.16"
+          }
+        },
+        "GWEN_5": {
+          "hide_name": 0,
+          "bits": [ 573 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:491.10-491.16"
+          }
+        },
+        "GWEN_6": {
+          "hide_name": 0,
+          "bits": [ 574 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:492.10-492.16"
+          }
+        },
+        "GWEN_7": {
+          "hide_name": 0,
+          "bits": [ 575 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:493.10-493.16"
+          }
+        },
+        "Q0": {
+          "hide_name": 0,
+          "bits": [ 576, 577, 578, 579, 580, 581, 582, 583 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:494.16-494.18"
+          }
+        },
+        "Q1": {
+          "hide_name": 0,
+          "bits": [ 584, 585, 586, 587, 588, 589, 590, 591 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:495.16-495.18"
+          }
+        },
+        "Q2": {
+          "hide_name": 0,
+          "bits": [ 592, 593, 594, 595, 596, 597, 598, 599 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:496.16-496.18"
+          }
+        },
+        "Q3": {
+          "hide_name": 0,
+          "bits": [ 600, 601, 602, 603, 604, 605, 606, 607 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:497.16-497.18"
+          }
+        },
+        "Q4": {
+          "hide_name": 0,
+          "bits": [ 608, 609, 610, 611, 612, 613, 614, 615 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:498.16-498.18"
+          }
+        },
+        "Q5": {
+          "hide_name": 0,
+          "bits": [ 616, 617, 618, 619, 620, 621, 622, 623 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:499.16-499.18"
+          }
+        },
+        "Q6": {
+          "hide_name": 0,
+          "bits": [ 624, 625, 626, 627, 628, 629, 630, 631 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:500.16-500.18"
+          }
+        },
+        "Q7": {
+          "hide_name": 0,
+          "bits": [ 632, 633, 634, 635, 636, 637, 638, 639 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:501.16-501.18"
+          }
+        },
+        "RXD": {
+          "hide_name": 0,
+          "bits": [ 516 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:339.10-339.13"
+          }
+        },
+        "TXD": {
+          "hide_name": 0,
+          "bits": [ 517 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:338.10-338.13"
+          }
+        },
+        "VDD": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:10.16-10.19"
+          }
+        },
+        "VSS": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:11.16-11.19"
+          }
+        },
+        "WEN_all": {
+          "hide_name": 0,
+          "bits": [ 640, 641, 642, 643, 644, 645, 646, 647 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:483.16-483.23"
+          }
+        },
+        "WEb_ram": {
+          "hide_name": 0,
+          "bits": [ 648 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:280.10-280.17"
+          }
+        },
+        "bidir_CORE2PAD": {
+          "hide_name": 0,
+          "bits": [ 60, 148, 236, 324, 412, 452, 460, 468, 476, 484, 68, 76, 84, 92, 100, 108, 116, 124, 132, 140, 156, 164, 172, 180, 188, 196, 204, 212, 220, 228, 244, 252, 260, 268, 276, 284, 292, 300, 308, 316, 332, 340, 348, 356, 364, 372, 380, 388, 396, 404, 420, 428, 436, 444 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:24.26-24.40"
+          }
+        },
+        "bidir_CORE2PAD_CS": {
+          "hide_name": 0,
+          "bits": [ 61, 149, 237, 325, 413, 453, 461, 469, 477, 485, 69, 77, 85, 93, 101, 109, 117, 125, 133, 141, 157, 165, 173, 181, 189, 197, 205, 213, 221, 229, 245, 253, 261, 269, 277, 285, 293, 301, 309, 317, 333, 341, 349, 357, 365, 373, 381, 389, 397, 405, 421, 429, 437, 445 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:26.26-26.43"
+          }
+        },
+        "bidir_CORE2PAD_IE": {
+          "hide_name": 0,
+          "bits": [ 62, 150, 238, 326, 414, 454, 462, 470, 478, 486, 70, 78, 86, 94, 102, 110, 118, 126, 134, 142, 158, 166, 174, 182, 190, 198, 206, 214, 222, 230, 246, 254, 262, 270, 278, 286, 294, 302, 310, 318, 334, 342, 350, 358, 366, 374, 382, 390, 398, 406, 422, 430, 438, 446 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:28.26-28.43"
+          }
+        },
+        "bidir_CORE2PAD_OE": {
+          "hide_name": 0,
+          "bits": [ 63, 151, 239, 327, 415, 455, 463, 471, 479, 487, 71, 79, 87, 95, 103, 111, 119, 127, 135, 143, 159, 167, 175, 183, 191, 199, 207, 215, 223, 231, 247, 255, 263, 271, 279, 287, 295, 303, 311, 319, 335, 343, 351, 359, 367, 375, 383, 391, 399, 407, 423, 431, 439, 447 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:25.26-25.43"
+          }
+        },
+        "bidir_CORE2PAD_PD": {
+          "hide_name": 0,
+          "bits": [ 64, 152, 240, 328, 416, 456, 464, 472, 480, 488, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 248, 256, 264, 272, 280, 288, 296, 304, 312, 320, 336, 344, 352, 360, 368, 376, 384, 392, 400, 408, 424, 432, 440, 448 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:30.26-30.43"
+          }
+        },
+        "bidir_CORE2PAD_PU": {
+          "hide_name": 0,
+          "bits": [ 65, 153, 241, 329, 417, 457, 465, 473, 481, 489, 73, 81, 89, 97, 105, 113, 121, 129, 137, 145, 161, 169, 177, 185, 193, 201, 209, 217, 225, 233, 249, 257, 265, 273, 281, 289, 297, 305, 313, 321, 337, 345, 353, 361, 369, 377, 385, 393, 401, 409, 425, 433, 441, 449 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:29.26-29.43"
+          }
+        },
+        "bidir_CORE2PAD_SL": {
+          "hide_name": 0,
+          "bits": [ 66, 154, 242, 330, 418, 458, 466, 474, 482, 490, 74, 82, 90, 98, 106, 114, 122, 130, 138, 146, 162, 170, 178, 186, 194, 202, 210, 218, 226, 234, 250, 258, 266, 274, 282, 290, 298, 306, 314, 322, 338, 346, 354, 362, 370, 378, 386, 394, 402, 410, 426, 434, 442, 450 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:27.26-27.43"
+          }
+        },
+        "bidir_PAD": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:17.33-17.42"
+          }
+        },
+        "bidir_PAD2CORE": {
+          "hide_name": 0,
+          "bits": [ 67, 155, 243, 331, 419, 459, 467, 475, 483, 491, 75, 83, 91, 99, 107, 115, 123, 131, 139, 147, 163, 171, 179, 187, 195, 203, 211, 219, 227, 235, 251, 259, 267, 275, 283, 291, 299, 307, 315, 323, 339, 347, 355, 363, 371, 379, 387, 395, 403, 411, 427, 435, 443, 451 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:23.26-23.40",
+            "unused_bits": "35 36"
+          }
+        },
+        "boot_rom_en": {
+          "hide_name": 0,
+          "bits": [ 718 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:283.10-283.21",
+            "unused_bits": "0 "
+          }
+        },
+        "bus_addr": {
+          "hide_name": 0,
+          "bits": [ 518, 519, 520, 521, 695, 696 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:272.16-272.24"
+          }
+        },
+        "bus_cyc": {
+          "hide_name": 0,
+          "bits": [ 522 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:271.10-271.17"
+          }
+        },
+        "bus_data_gpios": {
+          "hide_name": 0,
+          "bits": [ 532, 533, 534, 535, 536, 537, 538, 539 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:270.16-270.30"
+          }
+        },
+        "bus_data_out": {
+          "hide_name": 0,
+          "bits": [ 524, 525, 526, 527, 528, 529, 530, 531 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:269.16-269.28"
+          }
+        },
+        "bus_data_serial_ports": {
+          "hide_name": 0,
+          "bits": [ 686, 687, 688, 689, 690, 691, 692, 693 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:276.16-276.37"
+          }
+        },
+        "bus_data_sid": {
+          "hide_name": 0,
+          "bits": [ 697, 698, 699, 700, 701, 702, 703, 704 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:278.16-278.28"
+          }
+        },
+        "bus_data_timers": {
+          "hide_name": 0,
+          "bits": [ 707, 708, 709, 710, 711, 712, 713, 714 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:274.16-274.31"
+          }
+        },
+        "bus_we_gpios": {
+          "hide_name": 0,
+          "bits": [ 523 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:273.10-273.22"
+          }
+        },
+        "bus_we_serial_ports": {
+          "hide_name": 0,
+          "bits": [ 685 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:277.10-277.29"
+          }
+        },
+        "bus_we_sid": {
+          "hide_name": 0,
+          "bits": [ 705 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:279.10-279.20"
+          }
+        },
+        "bus_we_timers": {
+          "hide_name": 0,
+          "bits": [ 706 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:275.10-275.23"
+          }
+        },
+        "clk_PAD": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:14.23-14.30"
+          }
+        },
+        "clk_PAD2CORE": {
+          "hide_name": 0,
+          "bits": [ 500 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:20.10-20.22"
+          }
+        },
+        "const_zero": {
+          "hide_name": 0,
+          "bits": [ 683, 682, 511, 510 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:201.16-201.26"
+          }
+        },
+        "irq0": {
+          "hide_name": 0,
+          "bits": [ 540 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:262.10-262.14"
+          }
+        },
+        "irq1": {
+          "hide_name": 0,
+          "bits": [ 715 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:263.10-263.14"
+          }
+        },
+        "irq2": {
+          "hide_name": 0,
+          "bits": [ 716 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:264.10-264.14"
+          }
+        },
+        "irq3": {
+          "hide_name": 0,
+          "bits": [ 694 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:265.10-265.14"
+          }
+        },
+        "irq5": {
+          "hide_name": 0,
+          "bits": [ 717 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:266.10-266.14"
+          }
+        },
+        "irq6": {
+          "hide_name": 0,
+          "bits": [ 541 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:267.10-267.14"
+          }
+        },
+        "irq7": {
+          "hide_name": 0,
+          "bits": [ 542 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:268.10-268.14"
+          }
+        },
+        "last_addr": {
+          "hide_name": 0,
+          "bits": [ 501, 502, 503, 504, 505, 506, 507, 508, 719, 720, 721, 722, 723, 724, 725, 726 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:288.17-288.26",
+            "unused_bits": "8 9 10 11 12 13 14 15"
+          }
+        },
+        "le_hi_act": {
+          "hide_name": 0,
+          "bits": [ 727 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:282.10-282.19",
+            "unused_bits": "0 "
+          }
+        },
+        "le_lo_act": {
+          "hide_name": 0,
+          "bits": [ 728 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:281.10-281.19",
+            "unused_bits": "0 "
+          }
+        },
+        "pwm0": {
+          "hide_name": 0,
+          "bits": [ 543 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:335.10-335.14"
+          }
+        },
+        "pwm1": {
+          "hide_name": 0,
+          "bits": [ 544 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:336.10-336.14"
+          }
+        },
+        "pwm2": {
+          "hide_name": 0,
+          "bits": [ 545 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:337.10-337.14"
+          }
+        },
+        "ram_bus_in": {
+          "hide_name": 0,
+          "bits": [ 657, 658, 659, 660, 661, 662, 663, 664 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:286.16-286.26"
+          }
+        },
+        "ram_enabled": {
+          "hide_name": 0,
+          "bits": [ 665 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:287.10-287.21"
+          }
+        },
+        "requested_addr": {
+          "hide_name": 0,
+          "bits": [ 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:289.17-289.31"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 509 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:261.10-261.15"
+          }
+        },
+        "rom_bus_in": {
+          "hide_name": 0,
+          "bits": [ 492, 493, 494, 495, 496, 497, 498, 499 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:285.16-285.26"
+          }
+        },
+        "rom_bus_out": {
+          "hide_name": 0,
+          "bits": [ 649, 650, 651, 652, 653, 654, 655, 656 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:284.16-284.27"
+          }
+        },
+        "rst_n_PAD": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:15.23-15.32"
+          }
+        },
+        "rst_n_PAD2CORE": {
+          "hide_name": 0,
+          "bits": [ 684 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:21.10-21.24"
+          }
+        },
+        "tmr0_clk": {
+          "hide_name": 0,
+          "bits": [ 546 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:340.10-340.18"
+          }
+        },
+        "tmr0_o": {
+          "hide_name": 0,
+          "bits": [ 547 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:333.10-333.16"
+          }
+        },
+        "tmr1_clk": {
+          "hide_name": 0,
+          "bits": [ 548 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:341.10-341.18"
+          }
+        },
+        "tmr1_o": {
+          "hide_name": 0,
+          "bits": [ 549 ],
+          "attributes": {
+            "src": "/home/ubuntu/as2650-ws/src/chip_top.sv:334.10-334.16"
+          }
+        }
+      }
+    }
+  }
+}
