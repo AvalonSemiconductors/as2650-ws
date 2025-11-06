@@ -94,7 +94,7 @@ if { [info exists ::env(OPENLANE_SDC_IDEAL_CLOCKS)] && $::env(OPENLANE_SDC_IDEAL
 set_input_transition -max 0.55  [get_ports {rst}]
 set_input_transition -min 0.2  [get_ports {rst}]
 
-set_output_delay -min 6 -clock $clocks [get_ports {GWEN_*}]
+set_output_delay -min 8 -clock $clocks [get_ports {GWEN_*}]
 
 set_input_delay 1 -clock $clocks [get_port rst_n]
 set_input_delay 1 -clock $clocks [get_port rst]

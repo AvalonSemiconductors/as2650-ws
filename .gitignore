@@ -1,6 +1,6 @@
 runs/
 __pycache__/
-gf180mcu/
+gf180mcu_pdk/
 gf180_drc.lyrdb
 sim_build/
 macros/*/runs/

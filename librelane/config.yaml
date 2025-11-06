@@ -164,7 +164,6 @@ FP_SIZING: absolute
 # for the sealring on all sides
 DIE_AREA: [0, 0, 3932, 5122]
 CORE_AREA: [442, 442, 3490, 4680]
-EXTRA_VERILOG_MODELS: ["dir::../src/sram_blackbox.v"]
 
 # Increase for more logic
 # on your die
@@ -172,9 +171,16 @@ PL_TARGET_DENSITY_PCT: 35
 GRT_ALLOW_CONGESTION: true
 
 # PDN
+PDN_VWIDTH: 5
+PDN_HWIDTH: 5
+PDN_VSPACING: 1
+PDN_HSPACING: 1
+PDN_VPITCH: 75
+PDN_VPITCH: 75
 PDN_CORE_RING: True
 PDN_MULTILAYER: True
 PDN_ENABLE_RAILS: False
+PDN_CFG: dir::pdn_cfg.tcl
 # Maximum metal width without slotting: 30um
 PDN_CORE_RING_VWIDTH: 25
 PDN_CORE_RING_HWIDTH: 25
@@ -193,12 +199,37 @@ PDN_MACRO_CONNECTIONS: ["wrapped_as2650 VDD VSS VDD VSS", "sid VDD VSS VDD VSS",
 MAGIC_GDS_FLATGLOB:
 # For contacts
 - "*_CDNS_*"
-# For SRAM
-- "gf180mcu_fd_ip_sram__*"
 # COMP and Poly2 filler cells need to be 
 # flattened to form a "filltrans" layer
 - "COMP_fill_cell"
 - "Poly2_fill_cell"
+# Foundry provided SRAMs
+- "*$$*"
+- "M1_N*"
+- "M1_P*"
+- "M2_M1*"
+- "M3_M2*"
+- "nmos_5p0*"
+- "nmos_1p2*"
+- "pmos_5p0*"
+- "pmos_1p2*"
+- "via1_*"
+- "ypass_gate*"
+- "G_ring_*"
+# These additional cells must be flattened to get rid of 3.3V devices
+# (DUALGATE drawn into high-level cells)
+- "dcap_103*"
+- "din_*"
+- "mux821_*"
+- "rdummy_*"
+- "pmoscap_*"
+- "xdec_*"
+- "ypredec*"
+- "xpredec*"
+- "xdec8_*"
+- "prexdec_*"
+- "xdec32_*"
+- "sa_*"
 
 # Because we have multiple power pads for one power domain
 MAGIC_EXT_UNIQUE: notopports
@@ -420,42 +451,45 @@ MACROS:
       unused:
         location: [2900, 2000]
         orientation: N
-  gf180_ram_512x8_wrapper_as2650:
+  gf180mcu_fd_ip_sram__sram512x8m8wm1:
     gds:
-      - dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.gds
+      - pdk_dir::libs.ref/gf180mcu_fd_ip_sram/gds/gf180mcu_fd_ip_sram__sram512x8m8wm1.gds
     lef:
-      - dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.lef
-    pnl:
-      - dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.pnl.v
+      - pdk_dir::libs.ref/gf180mcu_fd_ip_sram/lef/gf180mcu_fd_ip_sram__sram512x8m8wm1.lef
+    vh:
+      - pdk_dir::libs.ref/gf180mcu_fd_ip_sram/verilog/gf180mcu_fd_ip_sram__sram512x8m8wm1__blackbox.v
     lib:
-      min_*: dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.lib
-      nom_*: dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.lib
-      max_*: dir::../macros/RAMWrapper/gf180_ram_512x8_wrapper_as2650.lib
+      "*_tt_025C_5v00":
+        - pdk_dir::libs.ref/gf180mcu_fd_ip_sram/lib/gf180mcu_fd_ip_sram__sram512x8m8wm1__tt_025C_5v00.lib
+      "*_ff_n40C_5v50":
+        - pdk_dir::libs.ref/gf180mcu_fd_ip_sram/lib/gf180mcu_fd_ip_sram__sram512x8m8wm1__ff_n40C_5v50.lib
+      "*_ss_125C_4v50":
+        - pdk_dir::libs.ref/gf180mcu_fd_ip_sram/lib/gf180mcu_fd_ip_sram__sram512x8m8wm1__ss_125C_4v50.lib
     instances:
       sram0:
         location: [800, 700]
-        orientation: S
+        orientation: N
       sram1:
         location: [1300, 700]
-        orientation: S
+        orientation: N
       sram2:
         location: [1800, 700]
-        orientation: S
+        orientation: N
       sram3:
         location: [2300, 700]
-        orientation: S
+        orientation: N
       sram4:
         location: [2800, 700]
-        orientation: S
+        orientation: N
       sram5:
         location: [2850, 1300]
-        orientation: N
+        orientation: S
       sram6:
         location: [2300, 1300]
-        orientation: S
+        orientation: N
       sram7:
         location: [2000, 1900]
-        orientation: N
+        orientation: S
   avali_logo:
     gds:
       - dir::../macros/AvaliLogo/avali_logo.gds

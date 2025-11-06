@@ -533,7 +533,7 @@ module chip_top #(
         .Q7(Q7)
     );
 
-    gf180_ram_512x8_wrapper_as2650 sram0(
+    gf180mcu_fd_ip_sram__sram512x8m8wm1 sram0(
     `ifdef USE_POWER_PINS
         .VDD(VDD),
         .VSS(VSS),
@@ -547,7 +547,7 @@ module chip_top #(
         .Q(Q0)
     );
 
-    gf180_ram_512x8_wrapper_as2650 sram1(
+    gf180mcu_fd_ip_sram__sram512x8m8wm1 sram1(
     `ifdef USE_POWER_PINS
         .VDD(VDD),
         .VSS(VSS),
@@ -561,7 +561,7 @@ module chip_top #(
         .Q(Q1)
     );
 
-    gf180_ram_512x8_wrapper_as2650 sram2(
+    gf180mcu_fd_ip_sram__sram512x8m8wm1 sram2(
     `ifdef USE_POWER_PINS
         .VDD(VDD),
         .VSS(VSS),
@@ -575,7 +575,7 @@ module chip_top #(
         .Q(Q2)
     );
 
-    gf180_ram_512x8_wrapper_as2650 sram3(
+    gf180mcu_fd_ip_sram__sram512x8m8wm1 sram3(
     `ifdef USE_POWER_PINS
         .VDD(VDD),
         .VSS(VSS),
@@ -589,7 +589,7 @@ module chip_top #(
         .Q(Q3)
     );
 
-    gf180_ram_512x8_wrapper_as2650 sram4(
+    gf180mcu_fd_ip_sram__sram512x8m8wm1 sram4(
     `ifdef USE_POWER_PINS
         .VDD(VDD),
         .VSS(VSS),
@@ -603,7 +603,7 @@ module chip_top #(
         .Q(Q4)
     );
 
-    gf180_ram_512x8_wrapper_as2650 sram5(
+    gf180mcu_fd_ip_sram__sram512x8m8wm1 sram5(
     `ifdef USE_POWER_PINS
         .VDD(VDD),
         .VSS(VSS),
@@ -617,7 +617,7 @@ module chip_top #(
         .Q(Q5)
     );
 
-    gf180_ram_512x8_wrapper_as2650 sram6(
+    gf180mcu_fd_ip_sram__sram512x8m8wm1 sram6(
     `ifdef USE_POWER_PINS
         .VDD(VDD),
         .VSS(VSS),
@@ -631,7 +631,7 @@ module chip_top #(
         .Q(Q6)
     );
 
-    gf180_ram_512x8_wrapper_as2650 sram7(
+    gf180mcu_fd_ip_sram__sram512x8m8wm1 sram7(
     `ifdef USE_POWER_PINS
         .VDD(VDD),
         .VSS(VSS),
